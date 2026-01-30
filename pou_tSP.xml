@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="tSP" kind="subprogram" lge="LD">
+         <vargroup name="tSP" kind="LOCAL">
+            <var name="rIN" type="REAL" attr="IN,ref_to"/>
+            <var name="diINOUT" type="DINT" dim="2" attr="INOUT,ref_to"/>
+            <var name="bOUT" type="BOOL" attr="OUT,ref_to"/>
+            <var name="rIN_str" type="STRING" len="255"/>
+            <var name="_TREAL" type="REAL"/>
+            <var name="_TSTRING" type="STRING" len="255"/>
+            <var name="_TBOOL" type="BOOL"/>
+            <var name="bVar" type="BOOL"/>
+         </vargroup>
+<defines name="tSP"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceLD>
+            <LDrung dx="0" dy="0" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="0" sx="3" sy="2" kind="OP" type="any_to_string">
+                  <LDboxinput pin="0" symbol="rIN^"/>
+                  <LDboxoutput pin="0" symbol="rIN_str"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="0"/>
+            </LDrung>
+            <LDrung dx="0" dy="2" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="2" sx="3" sy="2" kind="OP" type="trunc">
+                  <LDboxinput pin="0" symbol="rIN^"/>
+                  <LDboxoutput pin="0" symbol="_TREAL"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="2"/>
+            </LDrung>
+            <LDrung dx="0" dy="4" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="4" sx="3" sy="2" kind="OP" type="any_to_dint">
+                  <LDboxinput pin="0" symbol="_TREAL"/>
+                  <LDboxoutput pin="0" symbol="diINOUT^[0]"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="4"/>
+            </LDrung>
+            <LDrung dx="0" dy="6" sx="5" sy="4" label="">
+               <LDbox dx="1" dy="6" sx="3" sy="4" kind="OP" type="MID">
+                  <LDboxinput pin="0" symbol="rIN_str"/>
+                  <LDboxinput pin="1" symbol="3"/>
+                  <LDboxinput pin="2" symbol="5"/>
+                  <LDboxoutput pin="0" symbol="_TSTRING"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="6"/>
+            </LDrung>
+            <LDrung dx="0" dy="10" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="10" sx="3" sy="2" kind="OP" type="any_to_dint">
+                  <LDboxinput pin="0" symbol="_TSTRING"/>
+                  <LDboxoutput pin="0" symbol="diINOUT^[1]"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="10"/>
+            </LDrung>
+            <LDrung dx="0" dy="12" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="12" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="bVar"/>
+                  <LDboxoutput pin="0" symbol="bOUT"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="12"/>
+            </LDrung>
+            <LDrung dx="0" dy="14" sx="6" sy="3" label="">
+               <LDbox dx="1" dy="14" sx="2" sy="3" kind="OP" type="&lt;&gt;">
+                  <LDboxinput pin="0" symbol="diINOUT^[0]"/>
+                  <LDboxinput pin="1" symbol="0"/>
+               </LDbox>
+               <LDbox dx="3" dy="14" sx="2" sy="3" kind="OP" type="&lt;&gt;">
+                  <LDboxinput pin="0" symbol="diINOUT^[1]"/>
+                  <LDboxinput pin="1" symbol="0"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="bOUT^" dx="5" dy="14"/>
+            </LDrung>
+            <LDrung dx="0" dy="17" sx="2" sy="1" label="">
+               <LDcoil kind="D" symbol="bOUT^" dx="1" dy="17"/>
+            </LDrung>
+         </sourceLD>
+      </pou>
+   </programs>
+</K5project>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="_FFLD_L_ArgsUDFB" kind="program" period="1" phase="0" lge="FFL">
+         <vargroup name="_FFLD_L_ArgsUDFB" kind="LOCAL">
+            <var name="r_tUDFB_diIN" type="DINT" attr="ref_to"/>
+            <var name="r_tUDFB_diINOUT" type="DINT" dim="4" attr="ref_to"/>
+            <var name="r_tUDFB_diOUT" type="DINT" attr="ref_to"/>
+            <var name="test_init" type="BOOL"/>
+            <var name="tUDFB_diIN" type="DINT" init="1234"/>
+            <var name="Deref_tUDFB_diIN" type="DINT"/>
+            <var name="tUDFB_diINOUT" type="DINT" dim="4"/>
+            <var name="Deref_tUDFB_diINOUT" type="DINT" dim="4"/>
+            <var name="Deref_tUDFB_diOUT" type="DINT"/>
+            <var name="Inst_tUDFB" type="tUDFB"/>
+            <var name="Deref_tUDFB_diINOUT_0" type="DINT"/>
+            <var name="Deref_tUDFB_diINOUT_1" type="DINT"/>
+            <var name="Deref_tUDFB_diINOUT_2" type="DINT"/>
+            <var name="Deref_tUDFB_diINOUT_3" type="DINT"/>
+         </vargroup>
+<defines name="_FFLD_L_ArgsUDFB"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceSTIL>#info=FFL
+Network:N=1,Z=13,I=1,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:NOP,X=0,Y=0,H=1,V=0,S=1,C=0,T=
+Cell:XIC,X=1,Y=0,H=0,V=0,S=1,C=0,T=OK
+Cell:RET,X=2,Y=0,H=0,V=0,S=1,C=0,T=RETURN
+Cell:NOP,X=0,Y=1,H=0,V=1,S=1,C=0,T=
+Cell:NOP,X=1,Y=1,H=0,V=1,S=1,C=0,T=
+Cell:NOP,X=0,Y=2,H=0,V=1,S=1,C=0,T=
+Cell:NOP,X=1,Y=2,H=0,V=1,S=1,C=0,T=
+Cell:NOP,X=0,Y=3,H=0,V=1,S=1,C=0,T=
+Cell:XIC,X=1,Y=3,H=0,V=1,S=1,C=0,T=FAIL
+Cell:NOP,X=0,Y=4,H=0,V=1,S=1,C=0,T=
+Cell:NOP,X=1,Y=4,H=0,V=1,S=1,C=0,T=
+Cell:XIC,X=0,Y=6,H=0,V=0,S=1,C=0,T=FALSE
+Cell:OTE,X=1,Y=6,H=0,V=0,S=1,C=0,T=FAIL
+Cell:XIC,X=0,Y=9,H=0,V=0,S=1,C=0,T=FALSE
+Cell:OTE,X=1,Y=9,H=0,V=0,S=1,C=0,T=OK
+End_Network
+Network:N=1,Z=107,I=4,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Com:test if the initial value of references is &quot;Null&quot;
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=IsNullREF
+Cell:BOX,X=5,Y=0,H=0,V=0,N=4,S=1,C=0,T=IsNullREF
+Cell:BOX,X=9,Y=0,H=0,V=0,N=4,S=1,C=0,T=IsNullREF
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=4,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=6,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=7,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=8,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=10,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=11,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=12,Y=1,H=0,V=0,S=1,C=0,T=test_init
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=r_tUDFB_diIN
+Cell:INP,X=4,Y=2,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT
+Cell:INP,X=8,Y=2,H=0,V=0,S=1,C=0,T=r_tUDFB_diOUT
+Cell:BOX,X=1,Y=4,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=5,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=5,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=5,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=5,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=6,H=0,V=0,S=1,C=0,T=test_init = FALSE
+Cell:BOX,X=1,Y=8,H=0,V=0,N=4,S=1,C=0,T=REF
+Cell:NOP,X=0,Y=9,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=9,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=9,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=9,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=10,H=0,V=0,S=1,C=0,T=tUDFB_diIN
+Cell:OUT,X=2,Y=10,H=0,V=0,S=1,C=0,T=r_tUDFB_diIN
+Cell:BOX,X=1,Y=12,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=13,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=13,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=13,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=13,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=14,H=0,V=0,S=1,C=0,T=r_tUDFB_diIN^
+Cell:OUT,X=2,Y=14,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diIN
+Cell:BOX,X=1,Y=16,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=17,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=17,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=17,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=17,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=18,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diIN &lt;&gt; 1234
+Cell:BOX,X=1,Y=20,H=0,V=0,N=4,S=1,C=0,T=REF
+Cell:NOP,X=0,Y=21,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=21,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=21,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=21,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=22,H=0,V=0,S=1,C=0,T=tUDFB_diINOUT
+Cell:OUT,X=2,Y=22,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT
+Cell:BOX,X=1,Y=24,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=25,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=25,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=25,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=25,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=26,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT^[0]
+Cell:OUT,X=2,Y=26,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_0
+Cell:BOX,X=1,Y=28,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=29,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=29,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=29,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=29,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=30,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT^[1]
+Cell:OUT,X=2,Y=30,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_1
+Cell:BOX,X=1,Y=32,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=33,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=33,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=33,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=33,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=34,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT^[2]
+Cell:OUT,X=2,Y=34,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_2
+Cell:BOX,X=1,Y=37,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=38,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=38,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=38,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=38,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=39,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT^[3]
+Cell:OUT,X=2,Y=39,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_3
+Cell:BOX,X=1,Y=41,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=42,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=42,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=42,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=42,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=43,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_0 &lt;&gt; 0
+Cell:BOX,X=1,Y=45,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=46,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=46,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=46,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=46,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=47,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_1 &lt;&gt; 0
+Cell:BOX,X=1,Y=49,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=50,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=50,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=50,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=50,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=51,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_2 &lt;&gt; 0
+Cell:BOX,X=1,Y=53,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=54,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=54,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=54,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=54,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=55,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_3 &lt;&gt; 0
+Cell:BOX,X=1,Y=57,H=0,V=0,N=5,S=1,C=0,T=Inst_tUDFB:tUDFB
+Cell:NOP,X=0,Y=58,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=58,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=58,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=58,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=59,H=0,V=0,S=1,C=0,T=r_tUDFB_diIN^
+Cell:INP,X=0,Y=60,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT^
+Cell:BOX,X=1,Y=62,H=0,V=0,N=4,S=1,C=0,T=REF
+Cell:NOP,X=0,Y=63,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=63,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=63,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=63,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=64,H=0,V=0,S=1,C=0,T=Inst_tUDFB.diOUT
+Cell:OUT,X=2,Y=64,H=0,V=0,S=1,C=0,T=r_tUDFB_diOUT
+Cell:BOX,X=1,Y=66,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=67,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=67,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=67,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=67,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=68,H=0,V=0,S=1,C=0,T=r_tUDFB_diOUT^
+Cell:OUT,X=2,Y=68,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diOUT
+Cell:BOX,X=1,Y=70,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=71,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=71,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=71,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=71,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=72,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diOUT &lt;&gt; 1234
+Cell:BOX,X=1,Y=74,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=75,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=75,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=75,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=75,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=76,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT^[0]
+Cell:OUT,X=2,Y=76,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_0
+Cell:BOX,X=1,Y=78,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=79,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=79,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=79,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=79,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=80,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT^[1]
+Cell:OUT,X=2,Y=80,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_1
+Cell:BOX,X=1,Y=82,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=83,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=83,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=83,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=83,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=84,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT^[2]
+Cell:OUT,X=2,Y=84,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_2
+Cell:BOX,X=1,Y=86,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=87,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=87,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=87,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=87,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=88,H=0,V=0,S=1,C=0,T=r_tUDFB_diINOUT^[3]
+Cell:OUT,X=2,Y=88,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_3
+Cell:BOX,X=1,Y=90,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=91,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=91,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=91,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=91,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=92,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_0 &lt;&gt; 1234
+Cell:BOX,X=1,Y=94,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=95,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=95,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=95,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=95,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=96,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_1 &lt;&gt; 1234
+Cell:BOX,X=1,Y=98,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=99,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=99,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=99,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=99,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=100,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_2 &lt;&gt; 1234
+Cell:BOX,X=1,Y=102,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=103,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=103,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=103,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=103,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=104,H=0,V=0,S=1,C=0,T=Deref_tUDFB_diINOUT_3 &lt;&gt; 1234
+End_Network
+Network:N=1,Z=4,I=24,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:XIO,X=0,Y=0,H=0,V=0,S=1,C=0,T=FAIL
+Cell:OTE,X=1,Y=0,H=0,V=0,S=1,C=0,T=OK
+End_Network
+Network:N=1,Z=1,I=25,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+End_Network
+#endinfo
+         </sourceSTIL>
+      </pou>
+   </programs>
+</K5project>

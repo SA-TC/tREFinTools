@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="_LD_L_Ref2Ref_BlockInst" kind="subprogram" lge="LD">
+         <vargroup name="_LD_L_Ref2Ref_BlockInst" kind="LOCAL">
+            <var name="Inst_CMP" type="CMP"/>
+            <var name="Inst_tUDFB" type="tUDFB"/>
+            <var name="tArray" type="DINT" dim="4"/>
+            <var name="r_Inst_CMP" type="CMP" attr="ref_to"/>
+            <var name="r_Inst_tUDFB" type="tUDFB" attr="ref_to"/>
+            <var name="r_Inst_CMP_b" type="CMP" attr="ref_to"/>
+            <var name="r_Inst_tUDFB_b" type="tUDFB" attr="ref_to"/>
+            <var name="test_OUT_b1" type="BOOL"/>
+            <var name="test_OUT_b2" type="BOOL"/>
+            <var name="test_OUT_b3" type="BOOL"/>
+            <var name="test_OUT_di1" type="DINT"/>
+            <var name="test_INOUT_di1" type="DINT"/>
+            <var name="test_INOUT_di2" type="DINT"/>
+            <var name="test_INOUT_di3" type="DINT"/>
+            <var name="test_INOUT_di4" type="DINT"/>
+         </vargroup>
+<defines name="_LD_L_Ref2Ref_BlockInst"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceLD>
+            <LDbreak dx="0" dy="0" text="Init REF - Standard Function Block"/>
+            <LDbreak dx="0" dy="0" text="Initial State"/>
+            <LDrung dx="0" dy="2" sx="5" sy="3" label="">
+               <LDbox dx="1" dy="2" sx="3" sy="3" kind="FB" type="CMP" inst="Inst_CMP">
+                  <LDboxinput pin="0" symbol="100"/>
+                  <LDboxinput pin="1" symbol="10"/>
+                  <LDboxoutput pin="0" symbol=""/>
+                  <LDboxoutput pin="1" symbol=""/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="2"/>
+            </LDrung>
+            <LDrung dx="0" dy="5" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="5" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="Inst_CMP"/>
+                  <LDboxoutput pin="0" symbol="r_Inst_CMP"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="5"/>
+            </LDrung>
+            <LDbreak dx="0" dy="6" text="Init REF - User Defined Function Block"/>
+            <LDrung dx="0" dy="8" sx="5" sy="3" label="">
+               <LDbox dx="1" dy="8" sx="3" sy="3" kind="FB" type="tUDFB" inst="Inst_tUDFB">
+                  <LDboxinput pin="0" symbol="52"/>
+                  <LDboxinput pin="1" symbol="tArray"/>
+                  <LDboxoutput pin="0" symbol=""/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="8"/>
+            </LDrung>
+            <LDrung dx="0" dy="11" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="11" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="Inst_tUDFB"/>
+                  <LDboxoutput pin="0" symbol="r_Inst_tUDFB"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="11"/>
+            </LDrung>
+            <LDbreak dx="0" dy="12" text="COPY REF to REF - Standard Function Block"/>
+            <LDrung dx="0" dy="14" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="14" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_Inst_CMP"/>
+                  <LDboxoutput pin="0" symbol="r_Inst_CMP_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="14"/>
+            </LDrung>
+            <LDrung dx="0" dy="16" sx="3" sy="1" label="">
+               <LDcontact kind="D" symbol="r_Inst_CMP_b^.LT" dx="1" dy="16"/>
+               <LDcoil kind="D" symbol="test_OUT_b1" dx="2" dy="16"/>
+            </LDrung>
+            <LDrung dx="0" dy="17" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="17" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="test_OUT_b1 = TRUE"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="17"/>
+            </LDrung>
+            <LDrung dx="0" dy="19" sx="3" sy="1" label="">
+               <LDcontact kind="D" symbol="r_Inst_CMP_b^.EQ" dx="1" dy="19"/>
+               <LDcoil kind="D" symbol="test_OUT_b2" dx="2" dy="19"/>
+            </LDrung>
+            <LDrung dx="0" dy="20" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="20" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="test_OUT_b2 = TRUE"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="20"/>
+            </LDrung>
+            <LDrung dx="0" dy="22" sx="3" sy="1" label="">
+               <LDcontact kind="D" symbol="r_Inst_CMP_b^.GT" dx="1" dy="22"/>
+               <LDcoil kind="D" symbol="test_OUT_b3" dx="2" dy="22"/>
+            </LDrung>
+            <LDrung dx="0" dy="23" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="23" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="test_OUT_b3 = FALSE"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="23"/>
+            </LDrung>
+            <LDbreak dx="0" dy="24" text="COPY REF to REF - User Defined Function Block"/>
+            <LDrung dx="0" dy="26" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="26" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_Inst_tUDFB"/>
+                  <LDboxoutput pin="0" symbol="r_Inst_tUDFB_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="26"/>
+            </LDrung>
+            <LDrung dx="0" dy="28" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="28" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_Inst_tUDFB_b^.diOUT"/>
+                  <LDboxoutput pin="0" symbol="test_OUT_di1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="28"/>
+            </LDrung>
+            <LDrung dx="0" dy="30" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="30" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="test_OUT_di1 &lt;&gt; 52"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="30"/>
+            </LDrung>
+            <LDrung dx="0" dy="32" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="32" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_Inst_tUDFB_b^.diINOUT[0]"/>
+                  <LDboxoutput pin="0" symbol="test_INOUT_di1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="32"/>
+            </LDrung>
+            <LDrung dx="0" dy="34" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="34" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="test_INOUT_di1 &lt;&gt; 52"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="34"/>
+            </LDrung>
+            <LDrung dx="0" dy="36" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="36" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_Inst_tUDFB_b^.diINOUT[1]"/>
+                  <LDboxoutput pin="0" symbol="test_INOUT_di2"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="36"/>
+            </LDrung>
+            <LDrung dx="0" dy="38" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="38" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="test_INOUT_di2 &lt;&gt; 52"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="38"/>
+            </LDrung>
+            <LDrung dx="0" dy="40" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="40" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_Inst_tUDFB_b^.diINOUT[2]"/>
+                  <LDboxoutput pin="0" symbol="test_INOUT_di3"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="40"/>
+            </LDrung>
+            <LDrung dx="0" dy="42" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="42" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="test_INOUT_di3 &lt;&gt; 52"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="42"/>
+            </LDrung>
+            <LDrung dx="0" dy="44" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="44" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_Inst_tUDFB_b^.diINOUT[3]"/>
+                  <LDboxoutput pin="0" symbol="test_INOUT_di4"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="44"/>
+            </LDrung>
+            <LDrung dx="0" dy="46" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="46" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="test_INOUT_di4 &lt;&gt; 52"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="46"/>
+            </LDrung>
+         </sourceLD>
+      </pou>
+   </programs>
+</K5project>

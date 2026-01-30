@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="_ST_G_RefAllDataTypes_AllSimpleTypes" kind="UDFB" lge="ST">
+         <vargroup name="_ST_G_RefAllDataTypes_AllSimpleTypes" kind="LOCAL">
+         </vargroup>
+<defines name="_ST_G_RefAllDataTypes_AllSimpleTypes"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceSTIL>gr_bVar := REF(gbVar);
+gr_byVar := REF(gbyVar); 
+gr_diVar := REF(gdiVar);
+gr_dwVar := REF(gdwVar);
+gr_iVar := REF(giVar);
+gr_liVar := REF(gliVar);
+gr_lrVar := REF(glrVar);
+gr_lwVar := REF(glwVar);
+gr_rVar := REF(grVar);
+gr_siVar := REF(gsiVar);
+gr_strVar := REF(gstrVar);
+gr_tVar := REF(gtVar);
+gr_udVar := REF(gudVar);
+gr_uVar := REF(guVar);
+gr_ulVar := REF(gulVar);
+gr_usVar := REF(gusVar);
+gr_wVar := REF(gwVar);
+gr_wcsVar := REF(gwcsVar);
+
+//-----------------------//
+
+gDeref_bVar := gr_bVar^;
+FailIf(gDeref_bVar = FALSE);
+
+gDeref_byVar := gr_byVar^;
+FailIf(gDeref_byVar &lt;&gt; BYTE#255);
+
+gDeref_diVar := gr_diVar^;
+FailIf(gDeref_diVar &lt;&gt; DINT#2147483647);
+
+gDeref_dwVar := gr_dwVar^;
+FailIf(gDeref_dwVar &lt;&gt; DWORD#4294967295);
+
+gDeref_ivar := gr_iVar^;
+FailIf(gDeref_iVar &lt;&gt; INT#32767);
+
+gDeref_liVar := gr_liVar^;
+FailIf(gDeref_liVar &lt;&gt; LINT#999999999999999999);
+
+gDeref_lrVar := gr_lrVar^;
+FailIf(gDeref_lrVar &lt;&gt; LREAL#1.7976931348623158E308);
+
+gDeref_lwVar := gr_lwVar^;
+FailIf(gDeref_lwVar &lt;&gt; LWORD#9999999999999999999);
+
+gDeref_rVar := gr_rVar^;
+FailIf(gDeref_rVar &lt;&gt; REAL#3.402823E38);
+
+gDeref_siVar := gr_siVar^;
+FailIf(gDeref_siVar &lt;&gt; SINT#127);
+
+gDeref_strVar := gr_strVar^;
+FailIf(gDeref_strVar &lt;&gt; &apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;);
+
+gDeref_tVar := gr_tVar^;
+gDeref_tVar_converted := any_to_ulint(gDeref_tVar);
+FailIf(gDeref_tVar_converted &lt;&gt; 93784005);
+
+gDeref_udVar := gr_udVar^;
+FailIf(gDeref_udVar &lt;&gt; UDINT#4294967295);
+
+gDeref_uVar := gr_uVar^;
+FailIf(gDeref_uVar &lt;&gt; UINT#65535);
+
+gDeref_ulVar := gr_ulVar^;
+FailIf(gDeref_ulVar &lt;&gt; ULINT#9999999999999999999);
+
+gDeref_usVar := gr_usVar^;
+FailIf(gDeref_usVar &lt;&gt; USINT#255);
+
+gDeref_wVar := gr_wVar^;
+FailIf(gDeref_wVar &lt;&gt; WORD#65535);
+
+gDeref_wcsVar := gr_wcsVar^;
+FailIf(gDeref_wcsVar &lt;&gt; &quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;);
+         </sourceSTIL>
+      </pou>
+   </programs>
+</K5project>

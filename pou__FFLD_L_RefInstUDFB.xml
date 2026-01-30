@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="_FFLD_L_RefInstUDFB" kind="subprogram" lge="FFL">
+         <vargroup name="_FFLD_L_RefInstUDFB" kind="LOCAL">
+            <var name="test_init" type="BOOL"/>
+            <var name="test_INOUT_1" type="DINT"/>
+            <var name="test_INOUT_2" type="DINT"/>
+            <var name="Inst_tUDFB" type="tUDFB"/>
+            <var name="tArray" type="DINT" dim="4"/>
+            <var name="test_OUT" type="DINT"/>
+            <var name="r_Inst_tUDFB" type="tUDFB" attr="ref_to"/>
+            <var name="test_INOUT_4" type="DINT"/>
+            <var name="test_INOUT_3" type="DINT"/>
+         </vargroup>
+<defines name="_FFLD_L_RefInstUDFB"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceSTIL>#info=FFL
+Network:N=1,Z=6,I=1,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=5,S=1,C=0,T=Inst_tUDFB:tUDFB
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=25
+Cell:INP,X=0,Y=3,H=0,V=0,S=1,C=0,T=tArray
+End_Network
+Network:N=1,Z=5,I=2,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=IsNullREF
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=test_init
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=r_Inst_tUDFB
+End_Network
+Network:N=1,Z=5,I=3,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=test_init = FALSE
+End_Network
+Network:N=1,Z=5,I=4,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=REF
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=Inst_tUDFB
+Cell:OUT,X=2,Y=2,H=0,V=0,S=1,C=0,T=r_Inst_tUDFB
+End_Network
+Network:N=1,Z=5,I=5,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=r_Inst_tUDFB^.diOUT
+Cell:OUT,X=2,Y=2,H=0,V=0,S=1,C=0,T=test_OUT
+End_Network
+Network:N=1,Z=5,I=6,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=test_OUT &lt;&gt; 25
+End_Network
+Network:N=1,Z=5,I=7,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=r_Inst_tUDFB^.diINOUT[0]
+Cell:OUT,X=2,Y=2,H=0,V=0,S=1,C=0,T=test_INOUT_1
+End_Network
+Network:N=1,Z=5,I=8,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=test_INOUT_1 &lt;&gt; 25
+End_Network
+Network:N=1,Z=5,I=9,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=r_Inst_tUDFB^.diINOUT[1]
+Cell:OUT,X=2,Y=2,H=0,V=0,S=1,C=0,T=test_INOUT_2
+End_Network
+Network:N=1,Z=5,I=10,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=test_INOUT_2 &lt;&gt; 25
+End_Network
+Network:N=1,Z=5,I=11,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=r_Inst_tUDFB^.diINOUT[2]
+Cell:OUT,X=2,Y=2,H=0,V=0,S=1,C=0,T=test_INOUT_3
+End_Network
+Network:N=1,Z=5,I=12,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=test_INOUT_3 &lt;&gt; 25
+End_Network
+Network:N=1,Z=5,I=13,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=1
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=r_Inst_tUDFB^.diINOUT[3]
+Cell:OUT,X=2,Y=2,H=0,V=0,S=1,C=0,T=test_INOUT_4
+End_Network
+Network:N=1,Z=5,I=14,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+Cell:BOX,X=1,Y=0,H=0,V=0,N=4,S=1,C=0,T=FailIf
+Cell:NOP,X=0,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=2,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:NOP,X=3,Y=1,H=1,V=0,S=1,C=0,T=
+Cell:OTE,X=4,Y=1,H=0,V=0,S=1,C=0,T=
+Cell:INP,X=0,Y=2,H=0,V=0,S=1,C=0,T=test_INOUT_4 &lt;&gt; 25
+End_Network
+Network:N=1,Z=1,I=15,S=1,C=-1,D=0,T=
+Lab:
+Pragma:
+End_Network
+#endinfo
+         </sourceSTIL>
+      </pou>
+   </programs>
+</K5project>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="tUDFB" kind="UDFB" lge="ST">
+         <vargroup name="tUDFB" kind="LOCAL">
+            <var name="diIN" type="DINT" attr="IN"/>
+            <var name="diINOUT" type="DINT" dim="4" attr="INOUT"/>
+            <var name="diOUT" type="DINT" attr="OUT"/>
+            <var name="i" type="INT"/>
+         </vargroup>
+<defines name="tUDFB"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceSTIL>diOUT := diIN;
+
+for i := 0 to 3 do
+    diINOUT[i] := diIN;
+end_for;
+         </sourceSTIL>
+      </pou>
+   </programs>
+</K5project>

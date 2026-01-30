@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="_LD_L_UDFB_SPuseRefParameters" kind="UDFB" lge="LD">
+         <vargroup name="_LD_L_UDFB_SPuseRefParameters" kind="LOCAL">
+            <var name="rVar" type="REAL" init="123.456"/>
+            <var name="a_diVar" type="DINT" dim="2"/>
+            <var name="Deref_bOUT" type="BOOL"/>
+            <var name="Deref_diINOUT_0" type="DINT"/>
+            <var name="Deref_diINOUT_1" type="DINT"/>
+            <var name="_TREAL" type="REAL" attr="ref_to"/>
+            <var name="_TDINT" type="DINT" dim="2" attr="ref_to"/>
+         </vargroup>
+<defines name="_LD_L_UDFB_SPuseRefParameters"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceLD>
+            <LDbreak dx="0" dy="0" text="Initial State"/>
+            <LDrung dx="0" dy="1" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="1" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="rVar"/>
+                  <LDboxoutput pin="0" symbol="_TREAL"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="1"/>
+            </LDrung>
+            <LDrung dx="0" dy="3" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="3" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="a_diVar"/>
+                  <LDboxoutput pin="0" symbol="_TDINT"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="3"/>
+            </LDrung>
+            <LDrung dx="0" dy="5" sx="5" sy="3" label="">
+               <LDbox dx="1" dy="5" sx="3" sy="3" kind="OP" type="tSP">
+                  <LDboxinput pin="0" symbol="_TREAL"/>
+                  <LDboxinput pin="1" symbol="_TDINT"/>
+                  <LDboxoutput pin="0" symbol=""/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="5"/>
+            </LDrung>
+            <LDbreak dx="0" dy="6" text="test REF_TO as parameters"/>
+            <LDrung dx="0" dy="9" sx="3" sy="1" label="">
+               <LDcontact kind="D" symbol="tSP.bOUT^" dx="1" dy="9"/>
+               <LDcoil kind="D" symbol="Deref_bOUT" dx="2" dy="9"/>
+            </LDrung>
+            <LDrung dx="0" dy="10" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="10" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_bOUT = FALSE"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="10"/>
+            </LDrung>
+            <LDrung dx="0" dy="12" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="12" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="tSP.diINOUT^[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_diINOUT_0"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="12"/>
+            </LDrung>
+            <LDrung dx="0" dy="14" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="14" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_diINOUT_0 &lt;&gt; 123"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="14"/>
+            </LDrung>
+            <LDrung dx="0" dy="16" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="16" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="tSP.diINOUT^[1]"/>
+                  <LDboxoutput pin="0" symbol="Deref_diINOUT_1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="16"/>
+            </LDrung>
+            <LDrung dx="0" dy="18" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="18" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_diINOUT_1 &lt;&gt; 456"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="18"/>
+            </LDrung>
+         </sourceLD>
+      </pou>
+   </programs>
+</K5project>
