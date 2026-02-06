@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="_SFC_L_STlvl2_ComplexData" kind="program" period="1" phase="0" lge="SFC">
+         <vargroup name="_SFC_L_STlvl2_ComplexData" kind="LOCAL">
+            <var name="S_VarC3D" type="MyStructureOfComplex" dim="2,2,2"/>
+            <var name="Deref_S_VarC1DWithRef_0_r_s_c_StructureWithRef_r_s_Wstring" type="WSTRING"/>
+            <var name="r_S_VarC3D" type="MyStructureOfComplex" dim="2,2,2" attr="ref_to"/>
+            <var name="byVar" type="BYTE" init="BYTE#255"/>
+            <var name="Deref_U_Var_u_Int" type="INT"/>
+            <var name="Deref_diVar2D" type="DINT"/>
+            <var name="r_U_Var" type="MyUnion" attr="ref_to"/>
+            <var name="r_U_Var2D" type="MyUnion" dim="2,2" attr="ref_to"/>
+            <var name="S_VarC1D" type="MyStructureOfComplex" dim="2"/>
+            <var name="r_S_Var3D" type="MyStructure" dim="2,2,2" attr="ref_to"/>
+            <var name="Deref_S_Var2D_1_0_s_Lreal" type="LREAL"/>
+            <var name="Deref_S_VarCWithRef_r_s_c_String_1_0" type="STRING" len="255"/>
+            <var name="r_S_Var1DWithRef" type="r_MyStructure" dim="2" attr="ref_to"/>
+            <var name="Deref_S_Var_s_Wstring" type="WSTRING"/>
+            <var name="r_S_Var1D" type="MyStructure" dim="2" attr="ref_to"/>
+            <var name="Deref_S_Var_s_Dint" type="DINT"/>
+            <var name="S_VarC3DWithRef" type="r_MyStructureOfComplex" dim="2,2,2"/>
+            <var name="rVar3D" type="REAL" dim="2,2,2"/>
+            <var name="r_S_VarC3DWithRef" type="r_MyStructureOfComplex" dim="2,2,2" attr="ref_to"/>
+            <var name="r_S_VarWithRef" type="r_MyStructure" attr="ref_to"/>
+            <var name="r_S_Var2DWithRef" type="r_MyStructure" dim="2,2" attr="ref_to"/>
+            <var name="Deref_S_Var_s_Time_converted" type="ULINT"/>
+            <var name="diVar" type="DINT" init="DINT#2147483647"/>
+            <var name="Deref_S_VarCWithRef_r_s_c_Sint_0" type="SINT"/>
+            <var name="Dered_S_VarC3DWithRef_0_1_0_r_s_c_String_1_0" type="STRING" len="255"/>
+            <var name="S_VarWithRef" type="r_MyStructure"/>
+            <var name="bVar" type="BOOL" init="TRUE"/>
+            <var name="Deref_S_Var2DWithRef_0_1_r_s_Dint" type="DINT"/>
+            <var name="Deref_S_VarCWithRef_r_s_c_Union_u_Byte_0" type="BYTE"/>
+            <var name="S_VarC" type="MyStructureOfComplex"/>
+            <var name="S_Var3DWithRef" type="r_MyStructure" dim="2,2,2"/>
+            <var name="diVar2D" type="DINT" dim="2,2"/>
+            <var name="Deref_U_Var_u_Byte_0" type="BYTE"/>
+            <var name="S_VarC2DWithRef" type="r_MyStructureOfComplex" dim="2,2"/>
+            <var name="r_S_VarCWithRef" type="r_MyStructureOfComplex" attr="ref_to"/>
+            <var name="S_VarCWithRef" type="r_MyStructureOfComplex"/>
+            <var name="r_S_VarC2DWithRef" type="r_MyStructureOfComplex" dim="2,2" attr="ref_to"/>
+            <var name="wVar" type="WORD" dim="2,2,2"/>
+            <var name="S_Var2D" type="MyStructure" dim="2,2"/>
+            <var name="Deref_S_Var1DWithRef_1_r_s_Bool" type="BOOL"/>
+            <var name="S_Var1DWithRef" type="r_MyStructure" dim="2"/>
+            <var name="S_Var2DWithRef" type="r_MyStructure" dim="2,2"/>
+            <var name="r_S_VarC2D" type="MyStructureOfComplex" dim="2,2" attr="ref_to"/>
+            <var name="r_S_VarC1DWithRef" type="r_MyStructureOfComplex" dim="2" attr="ref_to"/>
+            <var name="wcsVar" type="WSTRING"/>
+            <var name="S_Var1D" type="MyStructure" dim="2"/>
+            <var name="S_VarC2D" type="MyStructureOfComplex" dim="2,2"/>
+            <var name="Deref_bVar1d" type="BOOL"/>
+            <var name="Deref_S_VarWithRef_r_s_Bool" type="BOOL"/>
+            <var name="U_Var2D" type="MyUnion" dim="2,2"/>
+            <var name="r_bVar1D" type="BOOL" dim="2" attr="ref_to"/>
+            <var name="Deref_S_VarC1D_1s_c_Structure_s_Bool" type="BOOL"/>
+            <var name="Deref_S_VarCWithRef_r_s_c_StructureWithRef_r_s_Lreal" type="LREAL"/>
+            <var name="Deref_S_Var3D_0_1_0_s_Time_converted" type="ULINT"/>
+            <var name="Deref_S_VarWithRef_r_s_Time" type="TIME"/>
+            <var name="r_S_Var2D" type="MyStructure" dim="2,2" attr="ref_to"/>
+            <var name="Deref_S_VarC_s_c_Structure_s_Bool" type="BOOL"/>
+            <var name="test_init_b" type="BOOL"/>
+            <var name="Deref_S_VarC2DWithRef_1_0_r_s_c_Union_u_Byte_1" type="BYTE"/>
+            <var name="Deref_S_Var_s_Bool" type="BOOL"/>
+            <var name="U_Var1D" type="MyUnion" dim="2"/>
+            <var name="Deref_S_Var_s_Lreal" type="LREAL"/>
+            <var name="Deref_S_Var3D_0_1_0_s_Time" type="TIME"/>
+            <var name="Deref_S_VarWithRef_r_s_Time_converted" type="ULINT"/>
+            <var name="Deref_S_VarWithRef_r_s_Lreal" type="LREAL"/>
+            <var name="S_Var3D" type="MyStructure" dim="2,2,2"/>
+            <var name="Deref_S_VarWithRef_r_s_Wstring" type="WSTRING"/>
+            <var name="Deref_S_VarC3D_1_0_1_s_c_Sint_1" type="SINT"/>
+            <var name="r_U_Var1D" type="MyUnion" dim="2" attr="ref_to"/>
+            <var name="Deref_S_Var1D_0_s_Byte" type="BYTE"/>
+            <var name="U_Var3D" type="MyUnion" dim="2,2,2"/>
+            <var name="lrVar" type="LREAL" init="LREAL#1.7976931348623158E308"/>
+            <var name="S_Var" type="MyStructure"/>
+            <var name="S_VarC1DWithRef" type="r_MyStructureOfComplex" dim="2"/>
+            <var name="r_S_Var3DWithRef" type="r_MyStructure" dim="2,2,2" attr="ref_to"/>
+            <var name="r_S_Var" type="MyStructure" attr="ref_to"/>
+            <var name="Deref_S_VarC_s_c_Union_u_Byte_0" type="BYTE"/>
+            <var name="Deref_S_VarCWithRef_r_s_c_Word_0_1_0" type="WORD"/>
+            <var name="siVar" type="SINT" dim="2"/>
+            <var name="U_Var" type="MyUnion"/>
+            <var name="Deref_S_VarC_s_c_Word_1_0_1" type="WORD"/>
+            <var name="Deref_S_Var_s_Time" type="TIME"/>
+            <var name="Deref_S_Var_s_Byte" type="BYTE"/>
+            <var name="strVar" type="STRING" len="255" dim="2,2"/>
+            <var name="Deref_S_VarC_s_c_String_0_1" type="STRING" len="255"/>
+            <var name="tVar" type="TIME" init="TIME#1d2h3m4s5ms"/>
+            <var name="Deref_rVar3D" type="REAL"/>
+            <var name="Deref_U_Var2D_1_0_u_Byte_1" type="BYTE"/>
+            <var name="bVar1D" type="BOOL" dim="2"/>
+            <var name="Deref_S_VarC_s_c_Sint_1" type="SINT"/>
+            <var name="Deref_U_Var1D_0_u_Word" type="WORD"/>
+            <var name="Deref_U_Var_u_Word" type="WORD"/>
+            <var name="r_S_VarC1D" type="MyStructureOfComplex" dim="2" attr="ref_to"/>
+            <var name="r_U_Var3D" type="MyUnion" dim="2,2,2" attr="ref_to"/>
+            <var name="r_rVar3D" type="REAL" dim="2,2,2" attr="ref_to"/>
+            <var name="r_diVar2D" type="DINT" dim="2,2" attr="ref_to"/>
+            <var name="test_init" type="BOOL"/>
+            <var name="Deref_S_VarWithRef_r_s_Dint" type="DINT"/>
+            <var name="Deref_S_VarWithRef_r_s_Byte" type="BYTE"/>
+            <var name="Deref_U_Var3D_0_1_0_u_Int" type="INT"/>
+            <var name="Deref_S_Var3DWithRef_1_0_1_r_s_Wstring" type="WSTRING"/>
+            <var name="Deref_S_VarC2D_0_1_s_c_Union_u_Byte_0" type="BYTE"/>
+            <var name="r_S_VarC" type="MyStructureOfComplex" attr="ref_to"/>
+         </vargroup>
+<defines name="_SFC_L_STlvl2_ComplexData"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceSFC sx="1" sy="5">
+            <SFCstep kind="init" dx="0" dy="0" ref="1" name="GS1" next="GT2">
+               <SFCaction kind="P1">
+                  <sourceSTIL>//test if the initial value of references is &quot;Null&quot;
+
+If 
+IsNullRef (r_S_Var) &amp;
+IsNullRef (r_S_VarC) &amp;
+IsNullRef (r_S_VarWithRef) &amp;
+IsNullRef (r_S_VarCWithRef) &amp;
+IsNullRef (r_U_Var) &amp;
+IsNullRef (r_bVar1D) &amp;
+IsNullRef (r_S_Var1D) &amp;
+IsNullRef (r_S_VarC1D) &amp;
+IsNullRef (r_S_Var1DWithRef) &amp;
+IsNullRef (r_S_VarC1DWithRef) &amp;
+IsNullRef (r_U_Var1D) &amp;
+IsNullRef (r_diVar2D) &amp;
+IsNullRef (r_S_Var2D) &amp;
+IsNullRef (r_S_VarC2D) &amp;
+IsNullRef (r_S_Var2DWithRef) &amp;
+IsNullRef (r_S_VarC2DWithRef) &amp;
+IsNullRef (r_U_Var2D) &amp;
+IsNullRef (r_rVar3D) &amp;
+IsNullRef (r_S_Var3D) &amp;
+IsNullRef (r_S_VarC3D) &amp;
+IsNullRef (r_S_Var3DWithRef) &amp;
+IsNullRef (r_S_VarC3DWithRef) &amp;
+IsNullRef (r_U_Var3D) &amp;
+IsNullRef (S_VarWithRef.r_s_Bool) &amp;
+IsNullRef (S_VarCWithRef.r_s_c_StructureWithRef) &amp;
+IsNullRef (S_VarCWithRef.r_s_c_Union) &amp;
+IsNullRef (S_VarCWithRef.r_s_c_Sint) &amp;
+IsNullRef (S_VarCWithRef.r_s_c_String) &amp;
+IsNullRef (S_VarCWithRef.r_s_c_Word) &amp;
+IsNullRef (S_VarC.s_c_StructureWithRef.r_s_Byte) &amp;
+IsNullRef (S_Var1DWithRef[1].r_s_Dint) &amp;
+IsNullRef (S_VarC1DWithRef[1].r_s_c_StructureWithRef) &amp;
+IsNullRef (S_VarC1DWithRef[1].r_s_c_Union) &amp;
+IsNullRef (S_VarC1DWithRef[1].r_s_c_Sint) &amp;
+IsNullRef (S_VarC1DWithRef[1].r_s_c_String) &amp;
+IsNullRef (S_VarC1DWithRef[1].r_s_c_Word) &amp;
+IsNullRef (S_VarC1D[1].s_c_StructureWithRef.r_s_Lreal) &amp;
+IsNullRef (S_Var2DWithRef[0,1].r_s_Time) &amp;
+IsNullRef (S_VarC2DWithRef[0,1].r_s_c_StructureWithRef) &amp;
+IsNullRef (S_VarC2DWithRef[0,1].r_s_c_Union) &amp;
+IsNullRef (S_VarC2DWithRef[0,1].r_s_c_Sint) &amp;
+IsNullRef (S_VarC2DWithRef[0,1].r_s_c_String) &amp;
+IsNullRef (S_VarC2DWithRef[0,1].r_s_c_Word) &amp;
+IsNullRef (S_VarC2D[0,1].s_c_StructureWithRef.r_s_Wstring) &amp;
+IsNullRef (S_Var3DWithRef[1,0,1].r_s_Bool) &amp;
+IsNullRef (S_VarC3DWithRef[1,0,1].r_s_c_StructureWithRef) &amp;
+IsNullRef (S_VarC3DWithRef[1,0,1].r_s_c_Union) &amp;
+IsNullRef (S_VarC3DWithRef[1,0,1].r_s_c_Sint) &amp;
+IsNullRef (S_VarC3DWithRef[1,0,1].r_s_c_String) &amp;
+IsNullRef (S_VarC3DWithRef[1,0,1].r_s_c_Word) &amp;
+IsNullRef (S_VarC3D[1,0,1].s_c_StructureWithRef.r_s_Wstring)
+then
+    test_init := TRUE;
+end_if;
+
+FailIf(test_init = FALSE);
+                  </sourceSTIL>
+               </SFCaction>
+               <SFCaction kind="N">
+                  <sourceSTIL>//test if REF works with Structures
+//INIT VALUES
+wcsVar := &quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;;
+
+//-----------------------//
+
+S_Var.s_Wstring := &quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;;
+
+//-----------------------//
+
+S_VarC.s_c_Structure.s_Bool := TRUE;
+S_VarC.s_c_Union.u_Byte[0] := BYTE#255;
+S_VarC.s_c_Sint[1] := SINT#127;
+S_VarC.s_c_String[0,1] := &apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;;
+S_VarC.s_c_Word[1,0,1] := WORD#65535;
+
+//-----------------------//
+
+siVar[0] := SINT#127;
+strVar[1,0] := &apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;;
+wVar[0,1,0] := WORD#65535;
+
+//-----------------------//
+
+U_Var.u_Int := INT#123;
+
+//-----------------------//
+
+
+
+//SET REFERENCES - LOW LEVEL
+S_VarWithRef.r_s_Bool := REF(bVar);
+S_VarWithRef.r_s_Byte := REF(byVar);
+S_VarWithRef.r_s_Dint := REF(diVar);
+S_VarWithRef.r_s_Lreal := REF(lrVar);
+S_VarWithRef.r_s_Time := REF(tVar);
+S_VarWithRef.r_s_Wstring := REF(wcsVar);
+
+//-----------------------//
+
+S_VarCWithRef.r_s_c_StructureWithRef := REF(S_VarWithRef);
+S_VarCWithRef.r_s_c_Union := REF(u_Var);
+S_VarCWithRef.r_s_c_Sint := REF(siVar);
+S_VarCWithRef.r_s_c_String := REF(strVar);
+S_VarCWithRef.r_s_c_Word := REF(wVar);
+
+//-----------------------//
+
+
+
+//SET REFERENCES - HIGH LEVEL
+r_S_Var := REF(S_Var);
+r_S_VarC := REF(S_VarC);
+r_S_VarWithRef := REF(S_VarWithRef);
+r_S_VarCWithRef := REF(S_VarCWithRef);
+
+//-----------------------//
+
+r_U_Var := REF(U_Var);
+
+//-----------------------//
+
+
+
+//CHECK DEREFERENCES
+Deref_S_Var_s_Bool := r_S_Var^.s_Bool;
+FailIf(Deref_S_Var_s_Bool = FALSE);
+
+Deref_S_Var_s_Byte := r_S_Var^.s_Byte;
+FailIf(Deref_S_Var_s_Byte &lt;&gt; BYTE#255);
+
+Deref_S_Var_s_Dint := r_S_Var^.s_Dint;
+FailIf(Deref_S_Var_s_Dint &lt;&gt; DINT#2147483647);
+
+Deref_S_Var_s_Lreal := r_S_Var^.s_Lreal;
+FailIf(Deref_S_Var_s_Lreal &lt;&gt; LREAL#1.7976931348623158E308);
+
+Deref_S_Var_s_Time := r_S_Var^.s_Time;
+Deref_S_Var_s_Time_converted := any_to_ulint(Deref_S_Var_s_Time);
+FailIf(Deref_S_Var_s_Time_converted &lt;&gt; 93784005);
+
+Deref_S_Var_s_Wstring := r_S_Var^.s_Wstring;
+FailIf(Deref_S_Var_s_Wstring &lt;&gt; &quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;);
+
+//-----------------------//
+
+Deref_S_VarC_s_c_Structure_s_Bool := r_S_VarC^.s_c_Structure.s_Bool;
+FailIf(Deref_S_VarC_s_c_Structure_s_Bool = FALSE);
+
+Deref_S_VarC_s_c_Union_u_Byte_0 := r_S_VarC^.s_c_Union.u_Byte[0];
+FailIf(Deref_S_VarC_s_c_Union_u_Byte_0 &lt;&gt; BYTE#255);
+
+Deref_S_VarC_s_c_Sint_1 := r_S_VarC^.s_c_Sint[1];
+FailIf(Deref_S_VarC_s_c_Sint_1 &lt;&gt; SINT#127);
+
+Deref_S_VarC_s_c_String_0_1 := r_S_VarC^.s_c_String[0,1];
+FailIf(Deref_S_VarC_s_c_String_0_1 &lt;&gt; &apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;);
+
+Deref_S_VarC_s_c_Word_1_0_1 := r_S_VarC^.s_c_Word[1,0,1];
+FailIf(Deref_S_VarC_s_c_Word_1_0_1 &lt;&gt; WORD#65535);
+
+//-----------------------//
+
+Deref_S_VarWithRef_r_s_Bool := r_S_VarWithRef^.r_s_Bool^;
+FailIf(Deref_S_VarWithRef_r_s_Bool = FALSE);
+
+Deref_S_VarWithRef_r_s_Byte := r_S_VarWithRef^.r_s_Byte^;
+FailIf(Deref_S_VarWithRef_r_s_Byte &lt;&gt; BYTE#255);
+
+Deref_S_VarWithRef_r_s_Dint := r_S_VarWithRef^.r_s_Dint^;
+FailIf(Deref_S_VarWithRef_r_s_Dint &lt;&gt; DINT#2147483647);
+
+Deref_S_VarWithRef_r_s_Lreal := r_S_VarWithRef^.r_s_Lreal^;
+FailIf(Deref_S_VarWithRef_r_s_Lreal &lt;&gt; LREAL#1.7976931348623158E308);
+
+Deref_S_VarWithRef_r_s_Time := r_S_VarWithRef^.r_s_Time^;
+Deref_S_VarWithRef_r_s_Time_converted := any_to_ulint(Deref_S_VarWithRef_r_s_Time);
+FailIf(Deref_S_VarWithRef_r_s_Time_converted &lt;&gt; 93784005);
+
+Deref_S_VarWithRef_r_s_Wstring := r_S_VarWithRef^.r_s_Wstring^;
+FailIf(Deref_S_VarWithRef_r_s_Wstring &lt;&gt; &quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;);
+
+//-----------------------//
+
+Deref_S_VarCWithRef_r_s_c_StructureWithRef_r_s_Lreal := r_S_VarCWithRef^.r_s_c_StructureWithRef^.r_s_Lreal^;
+FailIf(Deref_S_VarCWithRef_r_s_c_StructureWithRef_r_s_Lreal &lt;&gt; LREAL#1.7976931348623158E308);
+
+Deref_S_VarCWithRef_r_s_c_Union_u_Byte_0 := r_S_VarCWithRef^.r_s_c_Union^.u_Byte[0];
+FailIf(Deref_S_VarCWithRef_r_s_c_Union_u_Byte_0 &lt;&gt; BYTE#123);
+
+Deref_S_VarCWithRef_r_s_c_Sint_0 := r_S_VarCWithRef^.r_s_c_Sint^[0];
+FailIf(Deref_S_VarCWithRef_r_s_c_Sint_0 &lt;&gt; SINT#127);
+
+Deref_S_VarCWithRef_r_s_c_String_1_0 := r_S_VarCWithRef^.r_s_c_String^[1,0];
+FailIf(Deref_S_VarCWithRef_r_s_c_String_1_0 &lt;&gt; &apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;);
+
+Deref_S_VarCWithRef_r_s_c_Word_0_1_0 := r_S_VarCWithRef^.r_s_c_Word^[0,1,0];
+FailIf(Deref_S_VarCWithRef_r_s_c_Word_0_1_0 &lt;&gt; WORD#65535);
+
+//-----------------------//
+
+Deref_U_Var_u_Int := r_U_Var^.u_Int;
+FailIf(Deref_U_Var_u_Int &lt;&gt; 123);
+
+Deref_U_Var_u_Word := r_U_Var^.u_Word;
+FailIf(Deref_U_Var_u_Word &lt;&gt; 123);
+
+Deref_U_Var_u_Byte_0 := r_U_Var^.u_Byte[0];
+FailIf(Deref_U_Var_u_Byte_0 &lt;&gt; 123);
+
+
+
+//test if REF works with Arrays
+//INIT VALUES
+wcsVar := &quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;;
+
+//-----------------------//
+
+strVar[1,0] := &apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;;
+
+//-----------------------//
+
+bVar1D[1] := TRUE;
+diVar2D[0,1] := DINT#2147483647;
+rVar3D[1,0,1] := REAL#3.402823E38;
+
+//-----------------------//
+
+S_VarC2D[0,1].s_c_Union.u_Byte[0] := BYTE#255;
+S_VarC3D[1,0,1].s_c_Sint[1] := SINT#127;
+
+//-----------------------//
+
+U_Var.u_Byte[1] := BYTE#255;
+U_Var1D[0].u_Word := WORD#65535;
+U_Var2D[1,0].u_Byte[1] := BYTE#255;
+U_Var3D[0,1,0].u_Int := INT#32767;
+
+//-----------------------//
+
+
+
+//SET REFERENCES - LOW LEVEL
+S_Var1DWithRef[1].r_s_Bool := REF(bVar);
+S_Var2DWithRef[0,1].r_s_Dint := REF(diVar);
+S_Var3DWithRef[1,0,1].r_s_Wstring := REF(wcsVar);
+
+//-----------------------//
+
+S_VarWithRef.r_s_Wstring := REF(wcsVar);
+
+S_VarC1DWithRef[0].r_s_c_StructureWithRef := REF(S_VarWithRef);
+
+//-----------------------//
+
+S_VarC2DWithRef[1,0].r_s_c_Union := REF(U_Var);
+
+//-----------------------//
+
+S_VarC3DWithRef[0,1,0].r_s_c_String := REF(strVar);
+
+//-----------------------//
+
+
+
+//SET REFERENCES - HIGH LEVEL
+r_bVar1D := REF(bVar1D);
+r_diVar2D := REF(diVar2D);
+r_rVar3D := REF(rVar3D);
+
+//-----------------------//
+
+r_S_Var1D := REF(S_Var1D);
+r_S_Var2D := REF(S_Var2D);
+r_S_Var3D := REF(S_Var3D);
+
+//-----------------------//
+
+r_S_VarC1D := REF(S_VarC1D);
+r_S_VarC2D := REF(S_VarC2D);
+r_S_VarC3D := REF(S_VarC3D);
+
+//-----------------------//
+
+r_U_Var1D := REF(U_Var1D);
+r_U_Var2D := REF(U_Var2D);
+r_U_Var3D := REF(U_Var3D);
+
+//-----------------------//
+
+r_S_Var1DWithRef := REF(S_Var1DWithRef);
+r_S_Var2DWithRef := REF(S_Var2DWithRef);
+r_S_Var3DWithRef := REF(S_Var3DWithRef);
+
+//-----------------------//
+
+r_S_VarC1DWithRef := REF(S_VarC1DWithRef);
+r_S_VarC2DWithRef := REF(S_VarC2DWithRef);
+r_S_VarC3DWithRef := REF(S_VarC3DWithRef);
+
+//-----------------------//
+
+
+
+//CHECK DEREFERENCES
+Deref_bVar1D := r_bVar1D^[1];
+FailIf(Deref_bVar1D = FALSE);
+
+Deref_diVar2D := r_diVar2D^[0,1];
+FailIf(Deref_diVar2D &lt;&gt; DINT#2147483647);
+
+Deref_rVar3D := r_rVar3D^[1,0,1];
+FailIf(Deref_rVar3D &lt;&gt; REAL#3.402823E38);
+
+//-----------------------//
+
+Deref_S_Var1D_0_s_Byte := r_S_Var1D^[0].s_Byte;
+FailIf(Deref_S_Var1D_0_s_Byte &lt;&gt; BYTE#255);
+
+Deref_S_Var2D_1_0_s_Lreal := r_S_Var2D^[1,0].s_Lreal;
+FailIf(Deref_S_Var2D_1_0_s_Lreal &lt;&gt; LREAL#1.7976931348623158E308);
+
+Deref_S_Var3D_0_1_0_s_Time := r_S_Var3D^[0,1,0].s_Time;
+Deref_S_Var3D_0_1_0_s_Time_converted := any_to_ulint(Deref_S_Var3D_0_1_0_s_Time);
+FailIf(Deref_S_Var3D_0_1_0_s_Time_converted &lt;&gt; 93784005);
+
+//-----------------------//
+
+Deref_S_VarC1D_1s_c_Structure_s_Bool := r_S_VarC1D^[1].s_c_Structure.s_Bool;
+FailIf(Deref_S_VarC1D_1s_c_Structure_s_Bool = FALSE); 
+
+Deref_S_VarC2D_0_1_s_c_Union_u_Byte_0 := r_S_VarC2D^[0,1].s_c_Union.u_Byte[0];
+FailIf(Deref_S_VarC2D_0_1_s_c_Union_u_Byte_0 &lt;&gt; BYTE#255);
+
+Deref_S_VarC3D_1_0_1_s_c_Sint_1 := r_S_VarC3D^[1,0,1].s_c_Sint[1];
+FailIf(Deref_S_VarC3D_1_0_1_s_c_Sint_1 &lt;&gt; SINT#127);
+
+//-----------------------//
+
+Deref_U_Var1D_0_u_Word := r_U_Var1D^[0].u_Word;
+FailIf(Deref_U_Var1D_0_u_Word &lt;&gt; WORD#65535);
+
+Deref_U_Var2D_1_0_u_Byte_1 := r_U_Var2D^[1,0].u_Byte[1];
+FailIf(Deref_U_Var2D_1_0_u_Byte_1 &lt;&gt; BYTE#255);
+
+Deref_U_Var3D_0_1_0_u_Int := r_U_Var3D^[0,1,0].u_Int;
+FailIf(Deref_U_Var3D_0_1_0_u_Int &lt;&gt; INT#32767);
+
+//-----------------------//
+
+Deref_S_Var1DWithRef_1_r_s_Bool := r_S_Var1DWithRef^[1].r_s_Bool^;
+FailIf(Deref_S_Var1DWithRef_1_r_s_Bool = FALSE);
+
+Deref_S_Var2DWithRef_0_1_r_s_Dint := r_S_Var2DWithRef^[0,1].r_s_Dint^;
+FailIf(Deref_S_Var2DWithRef_0_1_r_s_Dint &lt;&gt; DINT#2147483647);
+
+Deref_S_Var3DWithRef_1_0_1_r_s_Wstring := r_S_Var3DWithRef^[1,0,1].r_s_Wstring^;
+FailIf(Deref_S_Var3DWithRef_1_0_1_r_s_Wstring &lt;&gt; &quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;);
+
+//-----------------------//
+
+Deref_S_VarC1DWithRef_0_r_s_c_StructureWithRef_r_s_Wstring := r_S_VarC1DWithRef^[0].r_s_c_StructureWithRef^.r_s_Wstring^;
+FailIf(Deref_S_VarC1DWithRef_0_r_s_c_StructureWithRef_r_s_Wstring &lt;&gt; &quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;);
+
+Deref_S_VarC2DWithRef_1_0_r_s_c_Union_u_Byte_1 := r_S_VarC2DWithRef^[1,0].r_s_c_Union^.u_Byte[1];
+FailIf(Deref_S_VarC2DWithRef_1_0_r_s_c_Union_u_Byte_1 &lt;&gt; BYTE#255);
+
+Dered_S_VarC3DWithRef_0_1_0_r_s_c_String_1_0 := r_S_VarC3DWithRef^[0,1,0].r_s_c_String^[1,0];
+FailIf(Dered_S_VarC3DWithRef_0_1_0_r_s_c_String_1_0 &lt;&gt; &apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;);
+                  </sourceSTIL>
+               </SFCaction>
+               <SFCaction kind="P0">
+                  <sourceSTIL>//test &apos;NULL&apos; assignment
+r_S_Var := NULL;
+r_S_VarC := NULL; 
+r_S_VarWithRef := NULL;
+r_S_VarCWithRef := NULL;
+r_U_Var := NULL;
+r_bVar1D := NULL;
+r_S_Var1D := NULL;
+r_S_VarC1D := NULL;
+r_S_Var1DWithRef := NULL;
+r_S_VarC1DWithRef := NULL;
+r_U_Var1D := NULL;
+r_diVar2D := NULL;
+r_S_Var2D := NULL;
+r_S_VarC2D := NULL;
+r_S_Var2DWithRef := NULL;
+r_S_VarC2DWithRef := NULL;
+r_U_Var2D := NULL;
+r_rVar3D := NULL;
+r_S_Var3D := NULL;
+r_S_VarC3D := NULL;
+r_S_Var3DWithRef := NULL;
+r_S_VarC3DWithRef := NULL;
+r_U_Var3D := NULL;
+S_VarWithRef.r_s_Bool := NULL;
+S_VarCWithRef.r_s_c_StructureWithRef := NULL;
+S_VarCWithRef.r_s_c_Union := NULL;
+S_VarCWithRef.r_s_c_Sint := NULL;
+S_VarCWithRef.r_s_c_String := NULL;
+S_VarCWithRef.r_s_c_Word := NULL;
+S_VarC.s_c_StructureWithRef.r_s_Byte := NULL;
+S_Var1DWithRef[1].r_s_Dint := NULL;
+S_VarC1DWithRef[1].r_s_c_StructureWithRef := NULL;
+S_VarC1DWithRef[1].r_s_c_Union := NULL;
+S_VarC1DWithRef[1].r_s_c_Sint := NULL;
+S_VarC1DWithRef[1].r_s_c_String := NULL;
+S_VarC1DWithRef[1].r_s_c_Word := NULL;
+S_VarC1D[1].s_c_StructureWithRef.r_s_Lreal := NULL;
+S_Var2DWithRef[0,1].r_s_Time := NULL;
+S_VarC2DWithRef[0,1].r_s_c_StructureWithRef := NULL;
+S_VarC2DWithRef[0,1].r_s_c_Union := NULL;
+S_VarC2DWithRef[0,1].r_s_c_Sint := NULL;
+S_VarC2DWithRef[0,1].r_s_c_String := NULL;
+S_VarC2DWithRef[0,1].r_s_c_Word := NULL;
+S_VarC2D[0,1].s_c_StructureWithRef.r_s_Wstring := NULL;
+S_Var3DWithRef[1,0,1].r_s_Bool := NULL;
+S_VarC3DWithRef[1,0,1].r_s_c_StructureWithRef := NULL;
+S_VarC3DWithRef[1,0,1].r_s_c_Union := NULL;
+S_VarC3DWithRef[1,0,1].r_s_c_Sint := NULL;
+S_VarC3DWithRef[1,0,1].r_s_c_String := NULL;
+S_VarC3DWithRef[1,0,1].r_s_c_Word := NULL;
+S_VarC3D[1,0,1].s_c_StructureWithRef.r_s_Wstring := NULL;
+
+
+//-----------------------//
+
+if 
+IsNullRef (r_S_Var) &amp;
+IsNullRef (r_S_VarC) &amp;
+IsNullRef (r_S_VarWithRef) &amp;
+IsNullRef (r_S_VarCWithRef) &amp;
+IsNullRef (r_U_Var) &amp;
+IsNullRef (r_bVar1D) &amp;
+IsNullRef (r_S_Var1D) &amp;
+IsNullRef (r_S_VarC1D) &amp;
+IsNullRef (r_S_Var1DWithRef) &amp;
+IsNullRef (r_S_VarC1DWithRef) &amp;
+IsNullRef (r_U_Var1D) &amp;
+IsNullRef (r_diVar2D) &amp;
+IsNullRef (r_S_Var2D) &amp;
+IsNullRef (r_S_VarC2D) &amp;
+IsNullRef (r_S_Var2DWithRef) &amp;
+IsNullRef (r_S_VarC2DWithRef) &amp;
+IsNullRef (r_U_Var2D) &amp;
+IsNullRef (r_rVar3D) &amp;
+IsNullRef (r_S_Var3D) &amp;
+IsNullRef (r_S_VarC3D) &amp;
+IsNullRef (r_S_Var3DWithRef) &amp;
+IsNullRef (r_S_VarC3DWithRef) &amp;
+IsNullRef (r_U_Var3D) &amp;
+IsNullRef (S_VarWithRef.r_s_Bool) &amp;
+IsNullRef (S_VarCWithRef.r_s_c_StructureWithRef) &amp;
+IsNullRef (S_VarCWithRef.r_s_c_Union) &amp;
+IsNullRef (S_VarCWithRef.r_s_c_Sint) &amp;
+IsNullRef (S_VarCWithRef.r_s_c_String) &amp;
+IsNullRef (S_VarCWithRef.r_s_c_Word) &amp;
+IsNullRef (S_VarC.s_c_StructureWithRef.r_s_Byte) &amp;
+IsNullRef (S_Var1DWithRef[1].r_s_Dint) &amp;
+IsNullRef (S_VarC1DWithRef[1].r_s_c_StructureWithRef) &amp;
+IsNullRef (S_VarC1DWithRef[1].r_s_c_Union) &amp;
+IsNullRef (S_VarC1DWithRef[1].r_s_c_Sint) &amp;
+IsNullRef (S_VarC1DWithRef[1].r_s_c_String) &amp;
+IsNullRef (S_VarC1DWithRef[1].r_s_c_Word) &amp;
+IsNullRef (S_VarC1D[1].s_c_StructureWithRef.r_s_Lreal) &amp;
+IsNullRef (S_Var2DWithRef[0,1].r_s_Time) &amp;
+IsNullRef (S_VarC2DWithRef[0,1].r_s_c_StructureWithRef) &amp;
+IsNullRef (S_VarC2DWithRef[0,1].r_s_c_Union) &amp;
+IsNullRef (S_VarC2DWithRef[0,1].r_s_c_Sint) &amp;
+IsNullRef (S_VarC2DWithRef[0,1].r_s_c_String) &amp;
+IsNullRef (S_VarC2DWithRef[0,1].r_s_c_Word) &amp;
+IsNullRef (S_VarC2D[0,1].s_c_StructureWithRef.r_s_Wstring) &amp;
+IsNullRef (S_Var3DWithRef[1,0,1].r_s_Bool) &amp;
+IsNullRef (S_VarC3DWithRef[1,0,1].r_s_c_StructureWithRef) &amp;
+IsNullRef (S_VarC3DWithRef[1,0,1].r_s_c_Union) &amp;
+IsNullRef (S_VarC3DWithRef[1,0,1].r_s_c_Sint) &amp;
+IsNullRef (S_VarC3DWithRef[1,0,1].r_s_c_String) &amp;
+IsNullRef (S_VarC3DWithRef[1,0,1].r_s_c_Word) &amp;
+IsNullRef (S_VarC3D[1,0,1].s_c_StructureWithRef.r_s_Wstring)
+then
+    test_init_b := TRUE;
+end_if;
+
+FailIf(test_init_b = FALSE);
+                  </sourceSTIL>
+               </SFCaction>
+            </SFCstep>
+            <SFCtrans dx="0" dy="1" ref="2" name="GT2" next="GS3">
+               <SFCcondition>
+                  <sourceSTIL>OK
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCstep kind="default" dx="0" dy="2" ref="3" name="GS3" next="GT4">
+            </SFCstep>
+            <SFCtrans dx="0" dy="3" ref="4" name="GT4" next="GS1">
+               <SFCcondition>
+                  <sourceSTIL>FALSE
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCjump dx="0" dy="4" ref="1" target="GS1"/>
+         </sourceSFC>
+      </pou>
+   </programs>
+</K5project>

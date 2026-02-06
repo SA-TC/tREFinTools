@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="_ST_G_InitIsNull_AllSimpleTypes" kind="UDFB" lge="ST">
+         <vargroup name="_ST_G_InitIsNull_AllSimpleTypes" kind="LOCAL">
+         </vargroup>
+<defines name="_ST_G_InitIsNull_AllSimpleTypes"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceSTIL>if 
+IsNullREF(gr_bVar) &amp; 
+IsNullREF(gr_byVar) &amp; 
+IsNullREF(gr_diVar) &amp; 
+IsNullREF(gr_dwVar) &amp;
+IsNullREF(gr_iVar) &amp;
+IsNullREF(gr_liVar) &amp;
+IsNullREF(gr_lrVar) &amp;
+IsNullREF(gr_lwVar) &amp;
+IsNullREF(gr_rVar) &amp;
+IsNullREF(gr_siVar) &amp;
+IsNullREF(gr_strVar) &amp;
+IsNullREF(gr_tVar) &amp;
+IsNullREF(gr_udVar) &amp;
+IsNullREF(gr_uVar) &amp;
+IsNullREF(gr_ulVar) &amp;
+IsNullREF(gr_usVar) &amp;
+IsNullREF(gr_wVar) &amp;
+IsNullREF(gr_wcsVar)
+then
+    gtest_init := TRUE;
+end_if;
+
+FailIf(gtest_init = FALSE);
+         </sourceSTIL>
+      </pou>
+   </programs>
+</K5project>

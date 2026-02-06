@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <variables>
+      <vargroup name="(Global)" kind="GLOBAL">
+         <var name="OK" type="BOOL"/>
+         <var name="FAIL" type="BOOL"/>
+         <var name="gDeref_lwVar" type="LWORD"/>
+         <var name="gwcsVar" type="WSTRING" init="&quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;"/>
+         <var name="glwVar" type="LWORD" init="LWORD#9999999999999999999"/>
+         <var name="gDeref_wcsVar" type="WSTRING"/>
+         <var name="gDeref_rVar" type="REAL"/>
+         <var name="gr_lwVar" type="LWORD" attr="ref_to"/>
+         <var name="gtVar" type="TIME" init="TIME#1d2h3m4s5ms"/>
+         <var name="gDeref_uVar" type="UINT"/>
+         <var name="gr_wcsVar" type="WSTRING" attr="ref_to"/>
+         <var name="gr_rVar" type="REAL" attr="ref_to"/>
+         <var name="grVar" type="REAL" init="REAL#3.402823E38"/>
+         <var name="gDeref_dwVar" type="DWORD"/>
+         <var name="gwVar" type="WORD" init="WORD#65535"/>
+         <var name="gsiVar" type="SINT" init="SINT#127"/>
+         <var name="gDeref_usVar" type="USINT"/>
+         <var name="gDeref_siVar" type="SINT"/>
+         <var name="gr_wVar" type="WORD" attr="ref_to"/>
+         <var name="gr_dwVar" type="DWORD" attr="ref_to"/>
+         <var name="gtest_init" type="BOOL"/>
+         <var name="gr_strVar" type="STRING" len="255" attr="ref_to"/>
+         <var name="glrVar" type="LREAL" init="LREAL#1.7976931348623158E308"/>
+         <var name="gDeref_ulVar" type="ULINT"/>
+         <var name="gusVar" type="USINT" init="USINT#255"/>
+         <var name="giVar" type="INT" init="INT#32767"/>
+         <var name="gr_tVar" type="TIME" attr="ref_to"/>
+         <var name="gr_siVar" type="SINT" attr="ref_to"/>
+         <var name="gbVar" type="BOOL" init="TRUE"/>
+         <var name="gr_ulVar" type="ULINT" attr="ref_to"/>
+         <var name="gr_diVar" type="DINT" attr="ref_to"/>
+         <var name="guVar" type="UINT" init="UINT#65535"/>
+         <var name="gDeref_tVar_converted" type="ULINT"/>
+         <var name="gDeref_bVar" type="BOOL"/>
+         <var name="gr_usVar" type="USINT" attr="ref_to"/>
+         <var name="gdwVar" type="DWORD" init="DWORD#4294967295"/>
+         <var name="gDeref_lrVar" type="LREAL"/>
+         <var name="gDeref_liVar" type="LINT"/>
+         <var name="gDeref_wVar" type="WORD"/>
+         <var name="gDeref_strVar" type="STRING" len="255"/>
+         <var name="gDeref_iVar" type="INT"/>
+         <var name="gr_liVar" type="LINT" attr="ref_to"/>
+         <var name="gudVar" type="UDINT" init="UDINT#4294967295"/>
+         <var name="gDeref_udVar" type="UDINT"/>
+         <var name="gDeref_diVar" type="DINT"/>
+         <var name="gr_udVar" type="UDINT" attr="ref_to"/>
+         <var name="gdiVar" type="DINT" init="DINT#2147483647"/>
+         <var name="gDeref_byVar" type="BYTE"/>
+         <var name="gr_bVar" type="BOOL" attr="ref_to"/>
+         <var name="gstrVar" type="STRING" len="255" init="&apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;"/>
+         <var name="gr_uVar" type="UINT" attr="ref_to"/>
+         <var name="gr_byVar" type="BYTE" attr="ref_to"/>
+         <var name="gDeref_tVar" type="TIME"/>
+         <var name="gr_lrVar" type="LREAL" attr="ref_to"/>
+         <var name="gr_iVar" type="INT" attr="ref_to"/>
+         <var name="gbyVar" type="BYTE" init="BYTE#255"/>
+         <var name="gulVar" type="ULINT" init="ULINT#9999999999999999999"/>
+         <var name="gliVar" type="LINT" init="LINT#999999999999999999"/>
+         <var name="gtest_init_b" type="BOOL"/>
+      </vargroup>
+      <vargroup name="(Retain)" kind="RETAIN">
+      </vargroup>
+   </variables>
+</K5project>

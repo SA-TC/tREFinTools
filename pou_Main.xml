@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="Main" kind="program" period="1" phase="0" lge="ST">
+         <vargroup name="Main" kind="LOCAL">
+            <var name="Inst__ST_G_InitIsNull_AllSimpleTypes" type="_ST_G_InitIsNull_AllSimpleTypes"/>
+            <var name="Inst__ST_G_NULLassignment_AllSimpleTypes" type="_ST_G_NULLassignment_AllSimpleTypes"/>
+            <var name="Inst__ST_G_RefAllDataTypes_AllSimpleTypes" type="_ST_G_RefAllDataTypes_AllSimpleTypes"/>
+            <var name="Inst__LD_L_UDFB_SPuseRefParameters" type="_LD_L_UDFB_SPuseRefParameters"/>
+         </vargroup>
+<defines name="Main"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceSTIL>if OK or FAIL then return; 
+end_if;
+
+FAIL := false;
+OK := false;
+
+//-------------------------------------------------
+
+_FBD_G_InitIsNull_AllSimpleTypes();         
+_FBD_G_NULLassignment_AllSimpleTypes();    
+_FBD_G_RefAllDataTypes_AllSimplesTypes();
+_FFLD_L_RefInstFB();
+_FFLD_L_RefInstUDFB();
+_LD_L_Ref2Ref_BlockInst();
+_LD_L_Ref2Ref_DataTypes();
+_LD_L_SP_SPuseRefParameters();
+Inst__LD_L_UDFB_SPuseRefParameters();
+Inst__ST_G_InitIsNull_AllSimpleTypes();
+Inst__ST_G_NULLassignment_AllSimpleTypes();
+Inst__ST_G_RefAllDataTypes_AllSimpleTypes();  
+
+//-------------------------------------------------
+
+OK := not FAIL;
+         </sourceSTIL>
+      </pou>
+   </programs>
+</K5project>

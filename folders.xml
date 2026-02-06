@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<Appli>
+   <Folder Name="Programs">
+      <Folder Name="Resources">
+         <Program Name="FailIf"/>
+         <Program Name="tSP"/>
+         <Program Name="tUDFB"/>
+      </Folder>
+      <Folder Name="Tests">
+         <Program Name="_FBD_G_InitIsNull_AllSimpleTypes"/>
+         <Program Name="_FBD_G_NULLassignment_AllSimpleTypes"/>
+         <Program Name="_FBD_G_RefAllDataTypes_AllSimplesTypes"/>
+         <Program Name="_FFLD_L_RefInstFB"/>
+         <Program Name="_FFLD_L_RefInstUDFB"/>
+         <Program Name="_LD_L_Ref2Ref_BlockInst"/>
+         <Program Name="_LD_L_Ref2Ref_DataTypes"/>
+         <Program Name="_LD_L_SP_SPuseRefParameters"/>
+         <Program Name="_LD_L_UDFB_SPuseRefParameters"/>
+         <Program Name="_ST_G_InitIsNull_AllSimpleTypes"/>
+         <Program Name="_ST_G_NULLassignment_AllSimpleTypes"/>
+         <Program Name="_ST_G_RefAllDataTypes_AllSimpleTypes"/>
+      </Folder>
+      <Program Name="_FBD_L_ComplexData"/>
+      <Program Name="_FFLD_L_ArgsUDFB"/>
+      <Program Name="_SFC_L_STlvl2_ComplexData"/>
+      <Program Name="Main"/>
+   </Folder>
+   <FieldBus/>
+   <Vars/>
+   <Types/>
+</Appli>

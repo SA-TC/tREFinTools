@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="_LD_L_Ref2Ref_DataTypes" kind="subprogram" lge="LD">
+         <vargroup name="_LD_L_Ref2Ref_DataTypes" kind="LOCAL">
+            <var name="bVar" type="BOOL" init="TRUE"/>
+            <var name="byVar" type="BYTE" init="BYTE#255"/>
+            <var name="diVar" type="DINT" init="DINT#2147483647"/>
+            <var name="dwVar" type="DWORD" init="DWORD#4294967295"/>
+            <var name="iVar" type="INT" init="INT#32767"/>
+            <var name="liVar" type="LINT" init="LINT#999999999999999999"/>
+            <var name="lrVar" type="LREAL" init="LREAL#1.7976931348623158E308"/>
+            <var name="lwVar" type="LWORD" init="LWORD#9999999999999999999"/>
+            <var name="rVar" type="REAL" init="REAL#3.402823E38"/>
+            <var name="siVar" type="SINT" init="SINT#127"/>
+            <var name="strVar" type="STRING" len="255" init="&apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;"/>
+            <var name="tVar" type="TIME" init="TIME#1d2h3m4s5ms"/>
+            <var name="udVar" type="UDINT" init="UDINT#4294967295"/>
+            <var name="uVar" type="UINT" init="UINT#65535"/>
+            <var name="ulVar" type="ULINT" init="ULINT#9999999999999999999"/>
+            <var name="usVar" type="USINT" init="USINT#255"/>
+            <var name="wVar" type="WORD" init="WORD#65535"/>
+            <var name="wcsVar" type="WSTRING"/>
+            <var name="S_Var" type="MyStructure"/>
+            <var name="S_VarC" type="MyStructureOfComplex"/>
+            <var name="U_Var" type="MyUnion"/>
+            <var name="bVar1D" type="BOOL" dim="2" init="TRUE,FALSE"/>
+            <var name="byVar1D" type="BYTE" dim="2" init="BYTE#1,BYTE#255"/>
+            <var name="diVar1D" type="DINT" dim="2" init="DINT#1,DINT#2147483647"/>
+            <var name="dwVar1D" type="DWORD" dim="2" init="DWORD#1,DWORD#4294967295"/>
+            <var name="iVar1D" type="INT" dim="2" init="INT#1,INT#32767"/>
+            <var name="liVar1D" type="LINT" dim="2" init="LINT#1,LINT#999999999999999999"/>
+            <var name="lrVar1D" type="LREAL" dim="2" init="LREAL#1.2,LREAL#1.7976931348623158E308"/>
+            <var name="lwVar1D" type="LWORD" dim="2" init="LWORD#1,LWORD#9999999999999999999"/>
+            <var name="rVar1D" type="REAL" dim="2" init="REAL#1.2,REAL#3.402823E38"/>
+            <var name="siVar1D" type="SINT" dim="2" init="SINT#1,SINT#127"/>
+            <var name="strVar1D" type="STRING" len="255" dim="2" init="&apos;Test STRING&apos;,&apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;"/>
+            <var name="tVar1D" type="TIME" dim="2" init="TIME#1s,TIME#1d2h3m4s5ms"/>
+            <var name="udVar1D" type="UDINT" dim="2" init="UDINT#1,UDINT#4294967295"/>
+            <var name="uVar1D" type="UINT" dim="2" init="UINT#1,UINT#65535"/>
+            <var name="ulVar1D" type="ULINT" dim="2" init="ULINT#1,ULINT#9999999999999999999"/>
+            <var name="usVar1D" type="USINT" dim="2" init="USINT#1,USINT#255"/>
+            <var name="wVar1D" type="WORD" dim="2" init="WORD#1,WORD#65535"/>
+            <var name="wcsVar1D" type="WSTRING" dim="2"/>
+            <var name="S_Var1D" type="MyStructure" dim="2"/>
+            <var name="S_VarC1D" type="MyStructureOfComplex" dim="2"/>
+            <var name="U_Var1D" type="MyUnion" dim="2"/>
+            <var name="r_bVar" type="BOOL" attr="ref_to"/>
+            <var name="r_byVar" type="BYTE" attr="ref_to"/>
+            <var name="r_diVar" type="DINT" attr="ref_to"/>
+            <var name="r_dwVar" type="DWORD" attr="ref_to"/>
+            <var name="r_iVar" type="INT" attr="ref_to"/>
+            <var name="r_liVar" type="LINT" attr="ref_to"/>
+            <var name="r_lrVar" type="LREAL" attr="ref_to"/>
+            <var name="r_lwVar" type="LWORD" attr="ref_to"/>
+            <var name="r_rVar" type="REAL" attr="ref_to"/>
+            <var name="r_siVar" type="SINT" attr="ref_to"/>
+            <var name="r_strVar" type="STRING" len="255" attr="ref_to"/>
+            <var name="r_tVar" type="TIME" attr="ref_to"/>
+            <var name="r_udVar" type="UDINT" attr="ref_to"/>
+            <var name="r_uVar" type="UINT" attr="ref_to"/>
+            <var name="r_ulVar" type="ULINT" attr="ref_to"/>
+            <var name="r_usVar" type="USINT" attr="ref_to"/>
+            <var name="r_wVar" type="WORD" attr="ref_to"/>
+            <var name="r_wcsVar" type="WSTRING" attr="ref_to"/>
+            <var name="r_S_Var" type="MyStructure" attr="ref_to"/>
+            <var name="r_S_VarC" type="MyStructureOfComplex" attr="ref_to"/>
+            <var name="r_U_Var" type="MyUnion" attr="ref_to"/>
+            <var name="r_bVar1D" type="BOOL" dim="2" attr="ref_to"/>
+            <var name="r_byVar1D" type="BYTE" dim="2" attr="ref_to"/>
+            <var name="r_diVar1D" type="DINT" dim="2" attr="ref_to"/>
+            <var name="r_dwVar1D" type="DWORD" dim="2" attr="ref_to"/>
+            <var name="r_iVar1D" type="INT" dim="2" attr="ref_to"/>
+            <var name="r_liVar1D" type="LINT" dim="2" attr="ref_to"/>
+            <var name="r_lrVar1D" type="LREAL" dim="2" attr="ref_to"/>
+            <var name="r_lwVar1D" type="LWORD" dim="2" attr="ref_to"/>
+            <var name="r_rVar1D" type="REAL" dim="2" attr="ref_to"/>
+            <var name="r_siVar1D" type="SINT" dim="2" attr="ref_to"/>
+            <var name="r_strVar1D" type="STRING" len="255" dim="2" attr="ref_to"/>
+            <var name="r_tVar1D" type="TIME" dim="2" attr="ref_to"/>
+            <var name="r_udVar1D" type="UDINT" dim="2" attr="ref_to"/>
+            <var name="r_uVar1D" type="UINT" dim="2" attr="ref_to"/>
+            <var name="r_ulVar1D" type="ULINT" dim="2" attr="ref_to"/>
+            <var name="r_usVar1D" type="USINT" dim="2" attr="ref_to"/>
+            <var name="r_wVar1D" type="WORD" dim="2" attr="ref_to"/>
+            <var name="r_wcsVar1D" type="WSTRING" dim="2" attr="ref_to"/>
+            <var name="r_S_Var1D" type="MyStructure" dim="2" attr="ref_to"/>
+            <var name="r_S_VarC1D" type="MyStructureOfComplex" dim="2" attr="ref_to"/>
+            <var name="r_U_Var1D" type="MyUnion" dim="2" attr="ref_to"/>
+            <var name="r_bVar_b" type="BOOL" attr="ref_to"/>
+            <var name="r_byVar_b" type="BYTE" attr="ref_to"/>
+            <var name="r_diVar_b" type="DINT" attr="ref_to"/>
+            <var name="r_dwVar_b" type="DWORD" attr="ref_to"/>
+            <var name="r_iVar_b" type="INT" attr="ref_to"/>
+            <var name="r_liVar_b" type="LINT" attr="ref_to"/>
+            <var name="r_lrVar_b" type="LREAL" attr="ref_to"/>
+            <var name="r_lwVar_b" type="LWORD" attr="ref_to"/>
+            <var name="r_rVar_b" type="REAL" attr="ref_to"/>
+            <var name="r_siVar_b" type="SINT" attr="ref_to"/>
+            <var name="r_strVar_b" type="STRING" len="255" attr="ref_to"/>
+            <var name="r_tVar_b" type="TIME" attr="ref_to"/>
+            <var name="r_udVar_b" type="UDINT" attr="ref_to"/>
+            <var name="r_uVar_b" type="UINT" attr="ref_to"/>
+            <var name="r_ulVar_b" type="ULINT" attr="ref_to"/>
+            <var name="r_usVar_b" type="USINT" attr="ref_to"/>
+            <var name="r_wVar_b" type="WORD" attr="ref_to"/>
+            <var name="r_wcsVar_b" type="WSTRING" attr="ref_to"/>
+            <var name="r_S_Var_b" type="MyStructure" attr="ref_to"/>
+            <var name="r_S_VarC_b" type="MyStructureOfComplex" attr="ref_to"/>
+            <var name="r_U_Var_b" type="MyUnion" attr="ref_to"/>
+            <var name="r_bVar1D_b" type="BOOL" dim="2" attr="ref_to"/>
+            <var name="r_byVar1D_b" type="BYTE" dim="2" attr="ref_to"/>
+            <var name="r_diVar1D_b" type="DINT" dim="2" attr="ref_to"/>
+            <var name="r_dwVar1D_b" type="DWORD" dim="2" attr="ref_to"/>
+            <var name="r_iVar1D_b" type="INT" dim="2" attr="ref_to"/>
+            <var name="r_liVar1D_b" type="LINT" dim="2" attr="ref_to"/>
+            <var name="r_lrVar1D_b" type="LREAL" dim="2" attr="ref_to"/>
+            <var name="r_lwVar1D_b" type="LWORD" dim="2" attr="ref_to"/>
+            <var name="r_rVar1D_b" type="REAL" dim="2" attr="ref_to"/>
+            <var name="r_siVar1D_b" type="SINT" dim="2" attr="ref_to"/>
+            <var name="r_strVar1D_b" type="STRING" len="255" dim="2" attr="ref_to"/>
+            <var name="r_tVar1D_b" type="TIME" dim="2" attr="ref_to"/>
+            <var name="r_udVar1D_b" type="UDINT" dim="2" attr="ref_to"/>
+            <var name="r_uVar1D_b" type="UINT" dim="2" attr="ref_to"/>
+            <var name="r_ulVar1D_b" type="ULINT" dim="2" attr="ref_to"/>
+            <var name="r_usVar1D_b" type="USINT" dim="2" attr="ref_to"/>
+            <var name="r_wVar1D_b" type="WORD" dim="2" attr="ref_to"/>
+            <var name="r_wcsVar1D_b" type="WSTRING" dim="2" attr="ref_to"/>
+            <var name="r_S_Var1D_b" type="MyStructure" dim="2" attr="ref_to"/>
+            <var name="r_S_VarC1D_b" type="MyStructureOfComplex" dim="2" attr="ref_to"/>
+            <var name="r_U_Var1D_b" type="MyUnion" dim="2" attr="ref_to"/>
+            <var name="Deref_bVar_b" type="BOOL"/>
+            <var name="Deref_byVar_b" type="BYTE"/>
+            <var name="Deref_diVar_b" type="DINT"/>
+            <var name="Deref_dwVar_b" type="DWORD"/>
+            <var name="Deref_iVar_b" type="INT"/>
+            <var name="Deref_liVar_b" type="LINT"/>
+            <var name="Deref_lrVar_b" type="LREAL"/>
+            <var name="Deref_lwVar_b" type="LWORD"/>
+            <var name="Deref_rVar_b" type="REAL"/>
+            <var name="Deref_siVar_b" type="SINT"/>
+            <var name="Deref_strVar_b" type="STRING" len="255"/>
+            <var name="Deref_tVar_b" type="TIME"/>
+            <var name="Deref_udVar_b" type="UDINT"/>
+            <var name="Deref_tVar_b_converted" type="ULINT"/>
+            <var name="Deref_uVar_b" type="UINT"/>
+            <var name="Deref_ulVar_b" type="ULINT"/>
+            <var name="Deref_usVar_b" type="USINT"/>
+            <var name="Deref_wVar_b" type="WORD"/>
+            <var name="Deref_wcsVar_b" type="WSTRING"/>
+            <var name="Deref_S_Var_b_s_Real" type="REAL"/>
+            <var name="Deref_S_VarC_b_s_c_Wstring_0" type="WSTRING"/>
+            <var name="Deref_U_Var_b_u_Word" type="WORD"/>
+            <var name="Deref_S_Var1D_b_1_s_String" type="STRING" len="255"/>
+            <var name="Deref_S_VarC1D_b_0_s_c_Lreal_1" type="LREAL"/>
+            <var name="Deref_U_Var1D_b_1_u_Byte_0" type="BYTE"/>
+            <var name="Deref_bVar1D_b" type="BOOL"/>
+            <var name="Deref_byVar1D_b" type="BYTE"/>
+            <var name="Deref_diVar1D_b" type="DINT"/>
+            <var name="Deref_dwVar1D_b" type="DWORD"/>
+            <var name="Deref_iVar1D_b" type="INT"/>
+            <var name="Deref_liVar1D_b" type="LINT"/>
+            <var name="Deref_lrVar1D_b" type="LREAL"/>
+            <var name="Deref_lwVar1D_b" type="LWORD"/>
+            <var name="Deref_rVar1D_b" type="REAL"/>
+            <var name="Deref_siVar1D_b" type="SINT"/>
+            <var name="Deref_strVar1D_b" type="STRING" len="255"/>
+            <var name="Deref_tVar1D_b_converted" type="ULINT"/>
+            <var name="Deref_tVar1D_b" type="TIME"/>
+            <var name="Deref_udVar1D_b" type="UDINT"/>
+            <var name="Deref_uVar1D_b" type="UINT"/>
+            <var name="Deref_ulVar1D_b" type="ULINT"/>
+            <var name="Deref_usVar1D_b" type="USINT"/>
+            <var name="Deref_wVar1D_b" type="WORD"/>
+            <var name="Deref_wcsVar1D_b" type="WSTRING"/>
+         </vargroup>
+<defines name="_LD_L_Ref2Ref_DataTypes"></defines>
+         <srcdoc>[VALUE]
+100=
+101=
+102=
+103=
+104=
+105=
+106=
+107=
+108=
+109=
+110=
+111=
+112=
+113=
+114=
+115=
+116=
+117=
+118=
+119=
+120=
+121=
+122=
+123=
+124=
+125=
+126=
+127=
+         </srcdoc>
+         <sourceLD>
+            <LDbreak dx="0" dy="0" text="Init Values - WSTRING"/>
+            <LDrung dx="0" dy="1" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="1" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="&quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;"/>
+                  <LDboxoutput pin="0" symbol="wcsVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="1"/>
+            </LDrung>
+            <LDrung dx="0" dy="3" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="3" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="&quot;Test WSTRING&quot;"/>
+                  <LDboxoutput pin="0" symbol="wcsVar1D[0]"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="3"/>
+            </LDrung>
+            <LDrung dx="0" dy="5" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="5" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="&quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;"/>
+                  <LDboxoutput pin="0" symbol="S_VarC.s_c_Wstring[0]"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="5"/>
+            </LDrung>
+            <LDbreak dx="0" dy="6" text="Init Values - Unions"/>
+            <LDrung dx="0" dy="8" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="8" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="WORD#65535"/>
+                  <LDboxoutput pin="0" symbol="U_Var.u_Word"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="8"/>
+            </LDrung>
+            <LDrung dx="0" dy="10" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="10" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="BYTE#255"/>
+                  <LDboxoutput pin="0" symbol="U_Var1D[1].u_Byte[0]"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="10"/>
+            </LDrung>
+            <LDbreak dx="0" dy="11" text="Init Values - Structure Of Complex"/>
+            <LDrung dx="0" dy="13" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="13" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="LREAL#1.7976931348623158E308"/>
+                  <LDboxoutput pin="0" symbol="S_VarC1D[0].s_c_Lreal[1]"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="13"/>
+            </LDrung>
+            <LDbreak dx="0" dy="14" text="Init REF - Simple DATA"/>
+            <LDrung dx="0" dy="16" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="16" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="bVar"/>
+                  <LDboxoutput pin="0" symbol="r_bVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="16"/>
+            </LDrung>
+            <LDrung dx="0" dy="18" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="18" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="byVar"/>
+                  <LDboxoutput pin="0" symbol="r_byVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="18"/>
+            </LDrung>
+            <LDrung dx="0" dy="20" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="20" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="diVar"/>
+                  <LDboxoutput pin="0" symbol="r_diVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="20"/>
+            </LDrung>
+            <LDrung dx="0" dy="22" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="22" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="dwVar"/>
+                  <LDboxoutput pin="0" symbol="r_dwVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="22"/>
+            </LDrung>
+            <LDrung dx="0" dy="24" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="24" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="iVar"/>
+                  <LDboxoutput pin="0" symbol="r_iVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="24"/>
+            </LDrung>
+            <LDrung dx="0" dy="26" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="26" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="liVar"/>
+                  <LDboxoutput pin="0" symbol="r_liVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="26"/>
+            </LDrung>
+            <LDrung dx="0" dy="28" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="28" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="lrVar"/>
+                  <LDboxoutput pin="0" symbol="r_lrVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="28"/>
+            </LDrung>
+            <LDrung dx="0" dy="30" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="30" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="lwVar"/>
+                  <LDboxoutput pin="0" symbol="r_lwVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="30"/>
+            </LDrung>
+            <LDrung dx="0" dy="32" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="32" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="rVar"/>
+                  <LDboxoutput pin="0" symbol="r_rVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="32"/>
+            </LDrung>
+            <LDrung dx="0" dy="34" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="34" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="siVar"/>
+                  <LDboxoutput pin="0" symbol="r_siVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="34"/>
+            </LDrung>
+            <LDrung dx="0" dy="36" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="36" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="strVar"/>
+                  <LDboxoutput pin="0" symbol="r_strVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="36"/>
+            </LDrung>
+            <LDrung dx="0" dy="38" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="38" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="tVar"/>
+                  <LDboxoutput pin="0" symbol="r_tVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="38"/>
+            </LDrung>
+            <LDrung dx="0" dy="40" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="40" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="udVar"/>
+                  <LDboxoutput pin="0" symbol="r_udVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="40"/>
+            </LDrung>
+            <LDrung dx="0" dy="42" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="42" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="uVar"/>
+                  <LDboxoutput pin="0" symbol="r_uVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="42"/>
+            </LDrung>
+            <LDrung dx="0" dy="44" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="44" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="ulVar"/>
+                  <LDboxoutput pin="0" symbol="r_ulVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="44"/>
+            </LDrung>
+            <LDrung dx="0" dy="46" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="46" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="usVar"/>
+                  <LDboxoutput pin="0" symbol="r_usVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="46"/>
+            </LDrung>
+            <LDrung dx="0" dy="48" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="48" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="wVar"/>
+                  <LDboxoutput pin="0" symbol="r_wVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="48"/>
+            </LDrung>
+            <LDrung dx="0" dy="50" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="50" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="wcsVar"/>
+                  <LDboxoutput pin="0" symbol="r_wcsVar"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="50"/>
+            </LDrung>
+            <LDbreak dx="0" dy="51" text="Init REF - Complex DATA"/>
+            <LDrung dx="0" dy="53" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="53" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="s_Var"/>
+                  <LDboxoutput pin="0" symbol="r_S_Var"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="53"/>
+            </LDrung>
+            <LDrung dx="0" dy="55" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="55" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="S_VarC"/>
+                  <LDboxoutput pin="0" symbol="r_S_VarC"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="55"/>
+            </LDrung>
+            <LDrung dx="0" dy="57" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="57" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="U_Var"/>
+                  <LDboxoutput pin="0" symbol="r_U_Var"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="57"/>
+            </LDrung>
+            <LDbreak dx="0" dy="58" text="Init REF - Array of Simple DATA"/>
+            <LDrung dx="0" dy="60" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="60" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="bVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_bVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="60"/>
+            </LDrung>
+            <LDrung dx="0" dy="62" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="62" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="byVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_byVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="62"/>
+            </LDrung>
+            <LDrung dx="0" dy="64" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="64" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="diVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_diVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="64"/>
+            </LDrung>
+            <LDrung dx="0" dy="66" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="66" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="dwVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_dwVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="66"/>
+            </LDrung>
+            <LDrung dx="0" dy="68" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="68" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="iVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_iVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="68"/>
+            </LDrung>
+            <LDrung dx="0" dy="70" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="70" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="liVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_liVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="70"/>
+            </LDrung>
+            <LDrung dx="0" dy="72" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="72" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="lrVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_lrVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="72"/>
+            </LDrung>
+            <LDrung dx="0" dy="74" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="74" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="lwVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_lwVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="74"/>
+            </LDrung>
+            <LDrung dx="0" dy="76" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="76" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="rVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_rVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="76"/>
+            </LDrung>
+            <LDrung dx="0" dy="78" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="78" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="siVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_siVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="78"/>
+            </LDrung>
+            <LDrung dx="0" dy="80" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="80" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="strVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_strVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="80"/>
+            </LDrung>
+            <LDrung dx="0" dy="82" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="82" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="tVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_tVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="82"/>
+            </LDrung>
+            <LDrung dx="0" dy="84" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="84" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="udVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_udVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="84"/>
+            </LDrung>
+            <LDrung dx="0" dy="86" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="86" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="uVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_uVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="86"/>
+            </LDrung>
+            <LDrung dx="0" dy="88" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="88" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="ulVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_ulVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="88"/>
+            </LDrung>
+            <LDrung dx="0" dy="90" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="90" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="usVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_usVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="90"/>
+            </LDrung>
+            <LDrung dx="0" dy="92" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="92" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="wVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_wVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="92"/>
+            </LDrung>
+            <LDrung dx="0" dy="94" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="94" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="wcsVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_wcsVar1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="94"/>
+            </LDrung>
+            <LDbreak dx="0" dy="95" text="Init REF - Array of Complex DATA"/>
+            <LDrung dx="0" dy="97" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="97" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="s_Var1D"/>
+                  <LDboxoutput pin="0" symbol="r_S_Var1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="97"/>
+            </LDrung>
+            <LDrung dx="0" dy="99" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="99" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="S_VarC1D"/>
+                  <LDboxoutput pin="0" symbol="r_S_VarC1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="99"/>
+            </LDrung>
+            <LDrung dx="0" dy="101" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="101" sx="3" sy="2" kind="OP" type="REF">
+                  <LDboxinput pin="0" symbol="U_Var1D"/>
+                  <LDboxoutput pin="0" symbol="r_U_Var1D"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="101"/>
+            </LDrung>
+            <LDbreak dx="0" dy="102" text="COPY REF to REF - Simple DATA"/>
+            <LDrung dx="0" dy="104" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="104" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_bVar"/>
+                  <LDboxoutput pin="0" symbol="r_bVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="104"/>
+            </LDrung>
+            <LDrung dx="0" dy="106" sx="3" sy="1" label="">
+               <LDcontact kind="D" symbol="r_bVar_b^" dx="1" dy="106"/>
+               <LDcoil kind="D" symbol="Deref_bVar_b" dx="2" dy="106"/>
+            </LDrung>
+            <LDrung dx="0" dy="107" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="107" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_bVar_b = FALSE"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="107"/>
+            </LDrung>
+            <LDrung dx="0" dy="109" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="109" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_byVar"/>
+                  <LDboxoutput pin="0" symbol="r_byVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="109"/>
+            </LDrung>
+            <LDrung dx="0" dy="111" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="111" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_byVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_byVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="111"/>
+            </LDrung>
+            <LDrung dx="0" dy="113" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="113" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_byVar_b &lt;&gt; BYTE#255"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="113"/>
+            </LDrung>
+            <LDrung dx="0" dy="115" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="115" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_diVar"/>
+                  <LDboxoutput pin="0" symbol="r_diVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="115"/>
+            </LDrung>
+            <LDrung dx="0" dy="117" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="117" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_diVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_diVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="117"/>
+            </LDrung>
+            <LDrung dx="0" dy="119" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="119" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_diVar_b &lt;&gt; DINT#2147483647"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="119"/>
+            </LDrung>
+            <LDrung dx="0" dy="121" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="121" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_dwVar"/>
+                  <LDboxoutput pin="0" symbol="r_dwVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="121"/>
+            </LDrung>
+            <LDrung dx="0" dy="123" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="123" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_dwVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_dwVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="123"/>
+            </LDrung>
+            <LDrung dx="0" dy="125" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="125" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_dwVar_b &lt;&gt; DWORD#4294967295"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="125"/>
+            </LDrung>
+            <LDrung dx="0" dy="127" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="127" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_iVar"/>
+                  <LDboxoutput pin="0" symbol="r_iVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="127"/>
+            </LDrung>
+            <LDrung dx="0" dy="129" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="129" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_iVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_iVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="129"/>
+            </LDrung>
+            <LDrung dx="0" dy="131" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="131" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_iVar_b &lt;&gt; INT#32767"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="131"/>
+            </LDrung>
+            <LDrung dx="0" dy="133" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="133" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_liVar"/>
+                  <LDboxoutput pin="0" symbol="r_liVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="133"/>
+            </LDrung>
+            <LDrung dx="0" dy="135" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="135" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_liVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_liVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="135"/>
+            </LDrung>
+            <LDrung dx="0" dy="137" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="137" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_liVar_b &lt;&gt; LINT#999999999999999999"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="137"/>
+            </LDrung>
+            <LDrung dx="0" dy="139" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="139" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_lrVar"/>
+                  <LDboxoutput pin="0" symbol="r_lrVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="139"/>
+            </LDrung>
+            <LDrung dx="0" dy="141" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="141" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_lrVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_lrVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="141"/>
+            </LDrung>
+            <LDrung dx="0" dy="143" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="143" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_lrVar_b &lt;&gt; LREAL#1.7976931348623158E308"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="143"/>
+            </LDrung>
+            <LDrung dx="0" dy="145" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="145" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_lwVar"/>
+                  <LDboxoutput pin="0" symbol="r_lwVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="145"/>
+            </LDrung>
+            <LDrung dx="0" dy="147" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="147" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_lwVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_lwVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="147"/>
+            </LDrung>
+            <LDrung dx="0" dy="149" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="149" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_lwVar_b &lt;&gt; LWORD#9999999999999999999"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="149"/>
+            </LDrung>
+            <LDrung dx="0" dy="151" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="151" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_rVar"/>
+                  <LDboxoutput pin="0" symbol="r_rVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="151"/>
+            </LDrung>
+            <LDrung dx="0" dy="153" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="153" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_rVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_rVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="153"/>
+            </LDrung>
+            <LDrung dx="0" dy="155" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="155" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_rVar_b &lt;&gt; REAL#3.402823E38"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="155"/>
+            </LDrung>
+            <LDrung dx="0" dy="157" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="157" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_siVar"/>
+                  <LDboxoutput pin="0" symbol="r_siVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="157"/>
+            </LDrung>
+            <LDrung dx="0" dy="159" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="159" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_siVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_siVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="159"/>
+            </LDrung>
+            <LDrung dx="0" dy="161" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="161" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_siVar_b &lt;&gt; SINT#127"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="161"/>
+            </LDrung>
+            <LDrung dx="0" dy="163" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="163" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_strVar"/>
+                  <LDboxoutput pin="0" symbol="r_strVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="163"/>
+            </LDrung>
+            <LDrung dx="0" dy="165" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="165" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_strVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_strVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="165"/>
+            </LDrung>
+            <LDrung dx="0" dy="167" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="167" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_strVar_b &lt;&gt; &apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="167"/>
+            </LDrung>
+            <LDrung dx="0" dy="169" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="169" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_tVar"/>
+                  <LDboxoutput pin="0" symbol="r_tVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="169"/>
+            </LDrung>
+            <LDrung dx="0" dy="171" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="171" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_tVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_tVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="171"/>
+            </LDrung>
+            <LDrung dx="0" dy="173" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="173" sx="3" sy="2" kind="OP" type="any_to_ulint">
+                  <LDboxinput pin="0" symbol="Deref_tVar_b"/>
+                  <LDboxoutput pin="0" symbol="Deref_tVar_b_converted"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="173"/>
+            </LDrung>
+            <LDrung dx="0" dy="175" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="175" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_tVar_b_converted &lt;&gt; 93784005"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="175"/>
+            </LDrung>
+            <LDrung dx="0" dy="177" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="177" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_udVar"/>
+                  <LDboxoutput pin="0" symbol="r_udVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="177"/>
+            </LDrung>
+            <LDrung dx="0" dy="179" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="179" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_udVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_udVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="179"/>
+            </LDrung>
+            <LDrung dx="0" dy="181" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="181" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_udVar_b &lt;&gt; UDINT#4294967295"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="181"/>
+            </LDrung>
+            <LDrung dx="0" dy="183" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="183" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_uVar"/>
+                  <LDboxoutput pin="0" symbol="r_uVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="183"/>
+            </LDrung>
+            <LDrung dx="0" dy="185" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="185" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_uVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_uVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="185"/>
+            </LDrung>
+            <LDrung dx="0" dy="187" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="187" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_uVar_b &lt;&gt; UINT#65535"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="187"/>
+            </LDrung>
+            <LDrung dx="0" dy="189" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="189" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_ulVar"/>
+                  <LDboxoutput pin="0" symbol="r_ulVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="189"/>
+            </LDrung>
+            <LDrung dx="0" dy="191" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="191" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_ulVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_ulVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="191"/>
+            </LDrung>
+            <LDrung dx="0" dy="193" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="193" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_ulVar_b &lt;&gt; ULINT#9999999999999999999"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="193"/>
+            </LDrung>
+            <LDrung dx="0" dy="195" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="195" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_usVar"/>
+                  <LDboxoutput pin="0" symbol="r_usVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="195"/>
+            </LDrung>
+            <LDrung dx="0" dy="197" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="197" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_usVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_usVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="197"/>
+            </LDrung>
+            <LDrung dx="0" dy="199" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="199" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_usVar_b &lt;&gt; USINT#255"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="199"/>
+            </LDrung>
+            <LDrung dx="0" dy="201" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="201" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_wVar"/>
+                  <LDboxoutput pin="0" symbol="r_wVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="201"/>
+            </LDrung>
+            <LDrung dx="0" dy="203" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="203" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_wVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_wVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="203"/>
+            </LDrung>
+            <LDrung dx="0" dy="205" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="205" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_wVar_b &lt;&gt; WORD#65535"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="205"/>
+            </LDrung>
+            <LDrung dx="0" dy="207" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="207" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_wcsVar"/>
+                  <LDboxoutput pin="0" symbol="r_wcsVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="207"/>
+            </LDrung>
+            <LDrung dx="0" dy="209" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="209" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_wcsVar_b^"/>
+                  <LDboxoutput pin="0" symbol="Deref_wcsVar_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="209"/>
+            </LDrung>
+            <LDrung dx="0" dy="211" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="211" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_wcsVar_b &lt;&gt; &quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="211"/>
+            </LDrung>
+            <LDbreak dx="0" dy="212" text="COPY REF to REF - Complex DATA"/>
+            <LDrung dx="0" dy="214" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="214" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_S_Var"/>
+                  <LDboxoutput pin="0" symbol="r_S_Var_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="214"/>
+            </LDrung>
+            <LDrung dx="0" dy="216" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="216" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_S_Var_b^.s_Real"/>
+                  <LDboxoutput pin="0" symbol="Deref_S_Var_b_s_Real"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="216"/>
+            </LDrung>
+            <LDrung dx="0" dy="218" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="218" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_S_Var_b_s_Real &lt;&gt; REAL#3.402823E38"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="218"/>
+            </LDrung>
+            <LDrung dx="0" dy="220" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="220" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_S_VarC"/>
+                  <LDboxoutput pin="0" symbol="r_S_VarC_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="220"/>
+            </LDrung>
+            <LDrung dx="0" dy="222" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="222" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_S_VarC_b^.s_c_Wstring[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_S_VarC_b_s_c_Wstring_0"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="222"/>
+            </LDrung>
+            <LDrung dx="0" dy="224" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="224" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_S_VarC_b_s_c_Wstring_0 &lt;&gt; &quot;This is a Wide STRING (WSTRING) variable content. The goal is to have a sentence with more than 255 characters (in principle, we can go up to 32 000 characters but it will be easier to simply exceed 255). This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&quot;"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="224"/>
+            </LDrung>
+            <LDrung dx="0" dy="226" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="226" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_U_Var"/>
+                  <LDboxoutput pin="0" symbol="r_U_Var_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="226"/>
+            </LDrung>
+            <LDrung dx="0" dy="228" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="228" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_U_Var_b^.u_Word"/>
+                  <LDboxoutput pin="0" symbol="Deref_U_Var_b_u_Word"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="228"/>
+            </LDrung>
+            <LDrung dx="0" dy="230" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="230" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_U_Var_b_u_Word &lt;&gt; WORD#65535"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="230"/>
+            </LDrung>
+            <LDbreak dx="0" dy="231" text="COPY REF to REF -  Array of Simple DATA"/>
+            <LDrung dx="0" dy="233" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="233" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_bVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_bVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="233"/>
+            </LDrung>
+            <LDrung dx="0" dy="235" sx="3" sy="1" label="">
+               <LDcontact kind="D" symbol="r_bVar1D_b^[1]" dx="1" dy="235"/>
+               <LDcoil kind="D" symbol="Deref_bVar1D_b" dx="2" dy="235"/>
+            </LDrung>
+            <LDrung dx="0" dy="236" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="236" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_bVar1D_b = TRUE"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="236"/>
+            </LDrung>
+            <LDrung dx="0" dy="238" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="238" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_byVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_byVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="238"/>
+            </LDrung>
+            <LDrung dx="0" dy="240" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="240" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_byVar1D_b^[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_byVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="240"/>
+            </LDrung>
+            <LDrung dx="0" dy="242" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="242" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_byVar1D_b &lt;&gt; BYTE#1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="242"/>
+            </LDrung>
+            <LDrung dx="0" dy="244" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="244" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_diVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_diVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="244"/>
+            </LDrung>
+            <LDrung dx="0" dy="246" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="246" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_diVar1D_b^[1]"/>
+                  <LDboxoutput pin="0" symbol="Deref_diVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="246"/>
+            </LDrung>
+            <LDrung dx="0" dy="248" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="248" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_diVar1D_b &lt;&gt; DINT#2147483647"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="248"/>
+            </LDrung>
+            <LDrung dx="0" dy="250" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="250" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_dwVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_dwVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="250"/>
+            </LDrung>
+            <LDrung dx="0" dy="252" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="252" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_dwVar1D_b^[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_dwVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="252"/>
+            </LDrung>
+            <LDrung dx="0" dy="254" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="254" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_dwVar1D_b &lt;&gt; DWORD#1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="254"/>
+            </LDrung>
+            <LDrung dx="0" dy="256" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="256" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_iVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_iVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="256"/>
+            </LDrung>
+            <LDrung dx="0" dy="258" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="258" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_iVar1D_b^[1]"/>
+                  <LDboxoutput pin="0" symbol="Deref_iVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="258"/>
+            </LDrung>
+            <LDrung dx="0" dy="260" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="260" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_iVar1D_b &lt;&gt; INT#32767"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="260"/>
+            </LDrung>
+            <LDrung dx="0" dy="262" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="262" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_liVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_liVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="262"/>
+            </LDrung>
+            <LDrung dx="0" dy="264" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="264" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_liVar1D_b^[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_liVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="264"/>
+            </LDrung>
+            <LDrung dx="0" dy="266" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="266" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_liVar1D_b &lt;&gt; LINT#1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="266"/>
+            </LDrung>
+            <LDrung dx="0" dy="268" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="268" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_lrVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_lrVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="268"/>
+            </LDrung>
+            <LDrung dx="0" dy="270" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="270" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_lrVar1D_b^[1]"/>
+                  <LDboxoutput pin="0" symbol="Deref_lrVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="270"/>
+            </LDrung>
+            <LDrung dx="0" dy="272" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="272" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_lrVar1D_b &lt;&gt; LREAL#1.7976931348623158E308"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="272"/>
+            </LDrung>
+            <LDrung dx="0" dy="274" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="274" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_lwVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_lwVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="274"/>
+            </LDrung>
+            <LDrung dx="0" dy="276" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="276" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_lwVar1D_b^[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_lwVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="276"/>
+            </LDrung>
+            <LDrung dx="0" dy="278" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="278" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_lwVar1D_b &lt;&gt; LWORD#1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="278"/>
+            </LDrung>
+            <LDrung dx="0" dy="280" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="280" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_rVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_rVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="280"/>
+            </LDrung>
+            <LDrung dx="0" dy="282" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="282" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_rVar1D_b^[1]"/>
+                  <LDboxoutput pin="0" symbol="Deref_rVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="282"/>
+            </LDrung>
+            <LDrung dx="0" dy="284" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="284" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_rVar1D_b &lt;&gt; REAL#3.402823E38"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="284"/>
+            </LDrung>
+            <LDrung dx="0" dy="286" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="286" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_siVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_siVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="286"/>
+            </LDrung>
+            <LDrung dx="0" dy="288" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="288" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_siVar1D_b^[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_siVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="288"/>
+            </LDrung>
+            <LDrung dx="0" dy="290" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="290" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_siVar1D_b &lt;&gt; SINT#1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="290"/>
+            </LDrung>
+            <LDrung dx="0" dy="292" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="292" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_strVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_strVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="292"/>
+            </LDrung>
+            <LDrung dx="0" dy="294" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="294" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_strVar1D_b^[1]"/>
+                  <LDboxoutput pin="0" symbol="Deref_strVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="294"/>
+            </LDrung>
+            <LDrung dx="0" dy="296" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="296" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_strVar1D_b &lt;&gt; &apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="296"/>
+            </LDrung>
+            <LDrung dx="0" dy="298" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="298" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_tVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_tVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="298"/>
+            </LDrung>
+            <LDrung dx="0" dy="300" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="300" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_tVar1D_b^[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_tVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="300"/>
+            </LDrung>
+            <LDrung dx="0" dy="302" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="302" sx="3" sy="2" kind="OP" type="any_to_ulint">
+                  <LDboxinput pin="0" symbol="Deref_tVar1D_b"/>
+                  <LDboxoutput pin="0" symbol="Deref_tVar1D_b_converted"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="302"/>
+            </LDrung>
+            <LDrung dx="0" dy="304" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="304" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_tVar1D_b_converted &lt;&gt; 1000"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="304"/>
+            </LDrung>
+            <LDrung dx="0" dy="306" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="306" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_udVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_udVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="306"/>
+            </LDrung>
+            <LDrung dx="0" dy="308" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="308" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_udVar1D_b^[1]"/>
+                  <LDboxoutput pin="0" symbol="Deref_udVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="308"/>
+            </LDrung>
+            <LDrung dx="0" dy="310" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="310" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_udVar1D_b &lt;&gt; UDINT#4294967295"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="310"/>
+            </LDrung>
+            <LDrung dx="0" dy="312" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="312" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_uVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_uVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="312"/>
+            </LDrung>
+            <LDrung dx="0" dy="314" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="314" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_uVar1D_b^[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_uVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="314"/>
+            </LDrung>
+            <LDrung dx="0" dy="316" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="316" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_uVar1D_b &lt;&gt; UINT#1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="316"/>
+            </LDrung>
+            <LDrung dx="0" dy="318" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="318" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_ulVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_ulVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="318"/>
+            </LDrung>
+            <LDrung dx="0" dy="320" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="320" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_ulVar1D_b^[1]"/>
+                  <LDboxoutput pin="0" symbol="Deref_ulVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="320"/>
+            </LDrung>
+            <LDrung dx="0" dy="322" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="322" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_ulVar1D_b &lt;&gt; ULINT#9999999999999999999"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="322"/>
+            </LDrung>
+            <LDrung dx="0" dy="324" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="324" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_usVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_usVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="324"/>
+            </LDrung>
+            <LDrung dx="0" dy="326" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="326" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_usVar1D_b^[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_usVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="326"/>
+            </LDrung>
+            <LDrung dx="0" dy="328" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="328" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_usVar1D_b &lt;&gt; USINT#1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="328"/>
+            </LDrung>
+            <LDrung dx="0" dy="330" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="330" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_wVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_wVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="330"/>
+            </LDrung>
+            <LDrung dx="0" dy="332" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="332" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_wVar1D_b^[1]"/>
+                  <LDboxoutput pin="0" symbol="Deref_wVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="332"/>
+            </LDrung>
+            <LDrung dx="0" dy="334" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="334" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_wVar1D_b &lt;&gt; WORD#65535"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="334"/>
+            </LDrung>
+            <LDrung dx="0" dy="336" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="336" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_wcsVar1D"/>
+                  <LDboxoutput pin="0" symbol="r_wcsVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="336"/>
+            </LDrung>
+            <LDrung dx="0" dy="338" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="338" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_wcsVar1D_b^[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_wcsVar1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="338"/>
+            </LDrung>
+            <LDrung dx="0" dy="340" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="340" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_wcsVar1D_b &lt;&gt; &quot;Test WSTRING&quot;"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="340"/>
+            </LDrung>
+            <LDbreak dx="0" dy="341" text="COPY REF to REF - Array of Complex DATA"/>
+            <LDrung dx="0" dy="343" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="343" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_S_Var1D"/>
+                  <LDboxoutput pin="0" symbol="r_S_Var1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="343"/>
+            </LDrung>
+            <LDrung dx="0" dy="345" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="345" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_S_Var1D_b^[1].s_String"/>
+                  <LDboxoutput pin="0" symbol="Deref_S_Var1D_b_1_s_String"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="345"/>
+            </LDrung>
+            <LDrung dx="0" dy="347" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="347" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_S_Var1D_b_1_s_String &lt;&gt; &apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="347"/>
+            </LDrung>
+            <LDrung dx="0" dy="349" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="349" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_S_VarC1D"/>
+                  <LDboxoutput pin="0" symbol="r_S_VarC1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="349"/>
+            </LDrung>
+            <LDrung dx="0" dy="351" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="351" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_S_VarC1D_b^[0].s_c_Lreal[1]"/>
+                  <LDboxoutput pin="0" symbol="Deref_S_VarC1D_b_0_s_c_Lreal_1"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="351"/>
+            </LDrung>
+            <LDrung dx="0" dy="353" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="353" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_S_VarC1D_b_0_s_c_Lreal_1 &lt;&gt; LREAL#1.7976931348623158E308"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="353"/>
+            </LDrung>
+            <LDrung dx="0" dy="355" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="355" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_U_Var1D"/>
+                  <LDboxoutput pin="0" symbol="r_U_Var1D_b"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="355"/>
+            </LDrung>
+            <LDrung dx="0" dy="357" sx="5" sy="2" label="">
+               <LDbox dx="1" dy="357" sx="3" sy="2" kind="OP" type="1">
+                  <LDboxinput pin="0" symbol="r_U_Var1D_b^[1].u_Byte[0]"/>
+                  <LDboxoutput pin="0" symbol="Deref_U_Var1D_b_1_u_Byte_0"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="4" dy="357"/>
+            </LDrung>
+            <LDrung dx="0" dy="359" sx="4" sy="2" label="">
+               <LDbox dx="1" dy="359" sx="2" sy="2" kind="OP" type="FailIf">
+                  <LDboxinput pin="0" symbol="Deref_U_Var1D_b_1_u_Byte_0 &lt;&gt; BYTE#255"/>
+               </LDbox>
+               <LDcoil kind="D" symbol="" dx="3" dy="359"/>
+            </LDrung>
+         </sourceLD>
+      </pou>
+   </programs>
+</K5project>

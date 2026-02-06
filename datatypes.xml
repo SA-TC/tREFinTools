@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <types>
+      <type name="MyStructure" kind="STRUCT" desc="">
+         <var name="s_Bool" type="BOOL" init="TRUE"/>
+         <var name="s_Byte" type="BYTE" init="BYTE#255"/>
+         <var name="s_Dint" type="DINT" init="DINT#2147483647"/>
+         <var name="s_Lreal" type="LREAL" init="LREAL#1.7976931348623158E308"/>
+         <var name="s_Time" type="TIME" init="TIME#1d2h3m4s5ms"/>
+         <var name="s_Wstring" type="WSTRING"/>
+         <var name="s_String" type="STRING" len="255" init="&apos;This is a classic/normal STRING variable content. The goal is to have a sentence with 255 characters, no more, no less. This is not so easy beacuse it requires a very very long sentence and a bit of imagination so that the text does not end up meaningless&apos;"/>
+         <var name="s_Real" type="REAL" init="REAL#3.402823E38"/>
+      </type>
+      <type name="MyStructureOfComplex" kind="STRUCT" desc="">
+         <var name="s_c_Structure" type="MyStructure"/>
+         <var name="s_c_Union" type="MyUnion"/>
+         <var name="s_c_Sint" type="SINT" dim="2"/>
+         <var name="s_c_String" type="STRING" len="255" dim="2,2"/>
+         <var name="s_c_Word" type="WORD" dim="2,2,2"/>
+         <var name="s_c_StructureWithRef" type="r_MyStructure"/>
+         <var name="s_c_Wstring" type="WSTRING" dim="2"/>
+         <var name="s_c_Lreal" type="LREAL" dim="2"/>
+      </type>
+      <type name="MyUnion" kind="UNION" desc="">
+         <var name="u_Byte" type="BYTE" dim="2"/>
+         <var name="u_Int" type="INT"/>
+         <var name="u_Word" type="WORD"/>
+      </type>
+      <type name="r_MyStructure" kind="STRUCT" desc="">
+         <var name="r_s_Bool" type="BOOL" attr="ref_to"/>
+         <var name="r_s_Byte" type="BYTE" attr="ref_to"/>
+         <var name="r_s_Dint" type="DINT" attr="ref_to"/>
+         <var name="r_s_Lreal" type="LREAL" attr="ref_to"/>
+         <var name="r_s_Time" type="TIME" attr="ref_to"/>
+         <var name="r_s_Wstring" type="WSTRING" attr="ref_to"/>
+      </type>
+      <type name="r_MyStructureOfComplex" kind="STRUCT" desc="">
+         <var name="r_s_c_StructureWithRef" type="r_MyStructure" attr="ref_to"/>
+         <var name="r_s_c_Union" type="MyUnion" attr="ref_to"/>
+         <var name="r_s_c_Sint" type="SINT" dim="2" attr="ref_to"/>
+         <var name="r_s_c_String" type="STRING" len="255" dim="2,2" attr="ref_to"/>
+         <var name="r_s_c_Word" type="WORD" dim="2,2,2" attr="ref_to"/>
+      </type>
+   </types>
+</K5project>
